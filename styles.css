@@ -3,6 +3,32 @@ body {
   background: #fff;
 }
 
+.position {
+  position: absolute;
+}
+
+.left16 {
+  left: 16px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.width288 {
+  width: 288px;
+}
+
+.typography {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -13,7 +39,6 @@ body {
   width: 111px;
   left: 0;
   top: 0;
-  position: absolute;
 }
 
 .navbar-item {
@@ -22,7 +47,6 @@ body {
 
 .icon {
   color: #1a2236;
-  position: absolute;
   height: 14px;
   width: 20px;
   right: 16px;
@@ -32,50 +56,30 @@ body {
 .name {
   height: 100px;
   width: 220px;
-  left: 16px;
   top: 104px;
-  position: absolute;
   color: #1a2236;
-  font-family: 'Playfair Display', serif;
   font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0;
-  text-align: left;
-  margin: 0%;
-}
-
-.name h1 {
-  margin: 0;
 }
 
 .intro {
-  position: absolute;
   height: 126px;
-  width: 288px;
-  left: 16px;
-  top: 224px;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  top: 224px;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  text-align: left;
 }
 
 .cta {
   height: 50px;
-  position: absolute;
-  width: 288px;
   left: 16px;
   top: 390px;
   background-color: #1a2236;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
   line-height: 24px;
   color: white;
   text-align: center;
