@@ -1,6 +1,6 @@
+
 body {
   background: #fff;
-  margin: 0;
 }
 
 .navbar {
@@ -20,19 +20,22 @@ body {
   flex: 1;
 }
 
-.navbar i {
+.icon {
+  color: #1a2236;
+  position: absolute;
   height: 14px;
   width: 20px;
-  margin: 19px 16px 0 284px;
-  position: absolute;
-  color: #1a2236;
+  right: 16px;
+  top: 19px;
+  border-radius: 0px;
+
 }
 
-.navbar ul, .hidden {
+.navbar ul {
   display: none;
 }
 
-#summary .name {
+.name {
   height: 100px;
   width: 220px;
   left: 16px;
@@ -42,18 +45,24 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0;
   text-align: left;
+  margin: 0%;
+}
+.name h1 {
+  margin: 0;
 }
 
-#summary p {
+
+.intro {
   position: absolute;
   height: 126px;
   width: 288px;
   left: 16px;
   top: 224px;
+  margin-top: 20;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -63,17 +72,16 @@ body {
   text-align: left;
 }
 
-#summary img {
+.cta img {
   height: 50px;
   position: absolute;
   width: 288px;
   left: 16px;
   top: 390px;
   color: #1a2236;
-
 }
 
-#summary .button {
+.cta p {
   height: 26.4705886px;
   width: 203.6792297px;
   left: 58px;
@@ -86,6 +94,6 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #fff;
-  margin: 12px 42.32px 11.53px 42px;
+  color: white;
+  margin: 0;
 }

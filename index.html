@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
 <body>
-  <header id="header">
+  <header class="header">
     <nav class="navbar">
-      <img class="header-image navbar-item" src="images/image_geometry_1.svg" alt="A geometry image">
-      <i class="fas fa-bars navbar-item"></i>
+      <div class="header-image navbar-item"><img src="images/image_geometry_1.svg" alt="A geometry image"/></div>
+      <div class="navbar-item icon"><i class="fas fa-bars "></i></div>
       <ul>
         <li><a href="#">Hello</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -25,16 +23,23 @@
       </ul>
     </nav>
   </header>
-
-  <section id="summary">
-    <h1 class="name">Ricky
+  <section class="summary">
+    <div class="name">
+      <h1>Ricky
       Mormor</h1>
+    </div>
+    <div class="intro">
       <p>Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
         If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+      </div>
 
-        <img src="images/Rectangle 20.svg" alt="Rectangular background for button">
-        <p class="button">Start collaboration</p>
+      <div class="cta">
+        <img src="images/Rectangle_20.svg" alt="Rectangular background for button"/>
+        <p class="summary-button">Start collaboration</p>
+      </div>
   </section>
 
+
+  <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
 </body>
 </html>
