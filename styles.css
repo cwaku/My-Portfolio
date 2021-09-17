@@ -95,10 +95,14 @@ body {
 }
 
 .head-image {
+  background: url(images/image-geometry_projects.png);
+  background-repeat: no-repeat;
+  background-size: 320px 180px;
   top: 490px;
   left: 0;
   right: 0;
   width: 320px;
+  height: 300px;
 }
 
 .projects-head {
@@ -155,6 +159,15 @@ body {
   margin: 5px;
 }
 
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  background: mistyrose;
+}
+
 .cards-detail .go-to {
   width: 178px;
   height: 44px;
@@ -168,6 +181,11 @@ body {
 .go-to i {
   margin-left: 10px;
   font-size: 1em;
+}
+
+.go-to:hover {
+  background: mistyrose;
+  color: #1a2236;
 }
 
 .fix-card {
@@ -224,6 +242,10 @@ body {
   background: #1a2236;
   border: 0;
   color: white;
+}
+
+.cta-2:hover {
+  color: #1a2236;
 }
 
 .tech {
