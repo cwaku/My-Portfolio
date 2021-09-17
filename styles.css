@@ -33,6 +33,12 @@ body {
   font-weight: 400;
 }
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -68,8 +74,6 @@ body {
 
 .intro {
   height: 126px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   top: 224px;
   font-size: 14px;
   line-height: 21px;
@@ -129,7 +133,6 @@ body {
   width: 320px;
   left: 0;
   background: #1a2236;
-  /* repeated */
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
 }
@@ -139,8 +142,6 @@ body {
   height: 16px;
   left: 20px;
   color: white;
-  /* font-family: Poppins;ADD FONTFAMILY WELL */
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
@@ -157,7 +158,6 @@ body {
 .cards-detail .go-to {
   width: 178px;
   height: 44px;
-/* repeated */
   background: #1a2236;
   color: white;
   left: 20px;
@@ -169,53 +169,37 @@ body {
   margin-left: 10px;
   font-size: 1em;
 }
-/* Clear reapeated properties later */
-.card1 {
+
+.fix-card {
   height: 186px;
   width: 320px;
   left: 0;
-  background: url(images/Rectangle21.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Back images for Project items */
+.card1 {
+  background: url(images/Rectangle21.png);
 }
 
 .card2 {
-  height: 186px;
-  width: 320px;
-  left: 0;
   background: url(images/Rectangle22.png);
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 .card3 {
-  height: 186px;
-  width: 320px;
-  left: 0;
   background: url(images/Rectangle23.png);
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 .card4 {
-  height: 186px;
-  width: 320px;
-  left: 0;
   background: url(images/Rectangle24.png);
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 .card5 {
-  height: 186px;
-  width: 320px;
-  left: 0;
   background: url(images/Rectangle25.png);
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 .card6 {
-  height: 186px;
-  width: 320px;
-  left: 0;
   background: url(images/Rectangle26.png);
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 .about-head {
@@ -224,4 +208,107 @@ body {
   top: 2892px;
   font-size: 50px;
   line-height: 50px;
+}
+
+.about {
+  height: 126px;
+  width: 288px;
+  top: 3020px;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.cta-2 {
+  height: 50px;
+  top: 3180px;
+  background: #1a2236;
+  border: 0;
+  color: white;
+}
+
+.tech {
+  display: grid;
+  grid-column: auto;
+  top: 3250px;
+}
+
+.tech-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tech-details .flex {
+  flex: 1;
+  margin: 5px;
+}
+
+.dimension {
+  height: 289px;
+  width: 289px;
+}
+
+.text-size {
+  height: 135px;
+  width: 178px;
+  left: 66px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  text-align: left;
+  color: white;
+}
+
+.bold {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 116px;
+  height: 30px;
+  left: 66px;
+  color: white;
+  margin: 30px;
+}
+
+.languages {
+  background: #1C528A;
+}
+
+.frameworks {
+  background: #E2505C;
+}
+
+.skills {
+  background: #FEBF52;
+}
+
+.svg-image1 {
+  height: 102px;
+  width: 102px;
+  left: 192px;
+  top: 145px;
+}
+
+.svg-image2 {
+  height: 102.22146524221353px;
+  width: 102.22146524221353px;
+  left: 215px;
+  top: 409px;
+}
+
+.svg-image2-1 {
+  height: 89.28138486162237px;
+  width: 72.28138486162237px;
+  left: 223px;
+  top: 413px;
+}
+
+.svg-image3 {
+  height: 102px;
+  width: 102px;
+  left: 190px;
+  top: 650px;
 }
