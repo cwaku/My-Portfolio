@@ -6,6 +6,7 @@ body {
 .primary-color {
   color: #1a2236;
 }
+
 .position {
   position: absolute;
 }
@@ -103,7 +104,6 @@ body {
   top: 672px;
   font-size: 50px;
   line-height: 50px;
-
 }
 
 .projects-list {
@@ -127,40 +127,42 @@ body {
 .cards-detail {
   height: 156px;
   width: 320px;
-  left: 0px;
-  background: #1A2236;
+  left: 0;
+  background: #1a2236;
   /* repeated */
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
 }
+
 .cards-detail p {
   width: 264px;
   height: 16px;
   left: 20px;
   color: white;
-  font-family: Poppins;
+  /* font-family: Poppins;ADD FONTFAMILY WELL */
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
 }
+
 .cards-detail button {
   height: 20px;
   left: 99px;
-  background: #98DEDE;
+  background: #98dede;
   border: 0;
   margin: 5px;
 }
 
 .cards-detail .go-to {
   width: 178px;
-height: 44px;
+  height: 44px;
 /* repeated */
-background: #1A2236;
-color: white;
-left: 20px;
-margin: 5px;
-border: 1px solid #fff;
+  background: #1a2236;
+  color: white;
+  left: 20px;
+  margin: 5px;
+  border: 1px solid #fff;
 }
 
 .go-to i {
@@ -171,7 +173,7 @@ border: 1px solid #fff;
 .card1 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle21.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -179,7 +181,7 @@ border: 1px solid #fff;
 .card2 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle22.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -187,7 +189,7 @@ border: 1px solid #fff;
 .card3 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle23.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -195,7 +197,7 @@ border: 1px solid #fff;
 .card4 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle24.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -203,7 +205,7 @@ border: 1px solid #fff;
 .card5 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle25.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -211,7 +213,7 @@ border: 1px solid #fff;
 .card6 {
   height: 186px;
   width: 320px;
-  left: 0px;
+  left: 0;
   background: url(images/Rectangle26.png);
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
