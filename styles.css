@@ -94,6 +94,10 @@ body {
   border: 0;
 }
 
+.cta:hover {
+  color: #1a2236;
+}
+
 .head-image {
   background: url(images/image-geometry_projects.png);
   background-repeat: no-repeat;
