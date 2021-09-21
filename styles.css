@@ -79,7 +79,6 @@ body {
 
 .form-submit button {
   height: 24px;
-  width: 288px;
   padding: 10px 68px 10px 69px;
   border: 0;
   font-size: 16px;
@@ -109,7 +108,14 @@ body {
 }
 
 .summary-cta button:hover {
-  background-color: mistyrose;
+  background-color: #e5e5e5;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.summary-cta button:focus {
+  background: #e5e5e5;
+  border: 2px solid #1A2236;
   color: #1a2236;
 }
 
@@ -172,20 +178,25 @@ button a {
 .cards-detail .go-to {
   width: 178px;
   height: 44px;
-  background: #1a2236;
-  color: white;
-  left: 20px;
+  background: #e5e5e5;
+  color: #1a2236;
   margin: 16px 0 0 20px;
-  border: 1px solid #fff;
 }
 
 .go-to i {
   font-size: 1em;
 }
 
-.go-to:hover {
-  background: mistyrose;
-  color: #1a2236;
+.cards-detail .go-to:hover {
+  background: #1a2236;
+  color: #e5e5e5;
+  border: 1px solid #fff;
+}
+
+.cards-detail .go-to:focus {
+  background: #1a2236;
+  color: #e5e5e5;
+  border: 2px solid #fff;
 }
 
 .fix-card {
@@ -267,6 +278,15 @@ button a {
 }
 
 .cta-2:hover {
+  color: #1a2236;
+  background-color: #e5e5e5;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.cta-2:focus {
+  background: #e5e5e5;
+  border: 2px solid #1A2236;
   color: #1a2236;
 }
 
@@ -402,4 +422,8 @@ button a {
 .form-submit {
   margin-top: 20px;
   height: 44px;
+}
+
+.form-submit button {
+  height: 100%;
 }
