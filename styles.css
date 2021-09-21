@@ -78,7 +78,7 @@ body {
 }
 
 .form-submit button {
-  height: 24px;
+  height: 100%;
   padding: 10px 68px 10px 69px;
   border: 0;
   font-size: 16px;
@@ -115,7 +115,7 @@ body {
 
 .summary-cta button:focus {
   background: #e5e5e5;
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   color: #1a2236;
 }
 
@@ -146,6 +146,7 @@ body {
 
 .cards {
   flex: 1;
+  margin-top: 32px;
 }
 
 .cards-detail {
@@ -280,13 +281,12 @@ button a {
 .cta-2:hover {
   color: #1a2236;
   background-color: #e5e5e5;
-  color: #1a2236;
   border: 1px solid #1a2236;
 }
 
 .cta-2:focus {
   background: #e5e5e5;
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   color: #1a2236;
 }
 
@@ -422,8 +422,4 @@ button a {
 .form-submit {
   margin-top: 20px;
   height: 44px;
-}
-
-.form-submit button {
-  height: 100%;
 }
