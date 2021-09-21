@@ -1,22 +1,30 @@
 
 body {
   background: #fff;
+  margin: 0;
 }
 
-.primary-color {
-  color: #1a2236;
+.navbar {
+  justify-content: space-between;
+  margin: 0;
 }
 
-.position {
-  position: absolute;
+.navbar .logo {
+  height: 74px;
+  width: 111px;
 }
 
-.left16 {
-  left: 16px;
+.navbar .logo img {
+  display: inline-block;
+  height: 100%;
 }
 
-.align-left {
-  text-align: left;
+.navbar .navbar-trigger {
+  margin: 19px 16px 0 0;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .no-margin {
@@ -36,54 +44,50 @@ body {
 .poppins {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.logo {
-  height: 74px;
-  width: 111px;
-  left: 0;
-  top: 0;
-}
-
-.navbar-item {
-  flex: 1;
-}
-
-.icon {
-  height: 14px;
-  width: 20px;
-  right: 16px;
-  left: 284px;
-  top: 19px;
+  font-weight: 500;
 }
 
 .name {
-  height: 100px;
   width: 220px;
-  top: 104px;
+  padding: 30px 84px 0 16px;
   font-size: 50px;
-  line-height: 100%;
+  line-height: 60px;
   letter-spacing: 0;
 }
 
 .intro {
   height: 126px;
-  top: 224px;
   font-size: 14px;
+  padding: 20px 16px 0 16px;
   line-height: 21px;
   letter-spacing: -0.01em;
 }
 
-.cta {
+.cards-detail button {
+  height: 20px;
+  background: #98dede;
+  border: 0;
+  margin: 5px 0 0 20px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 32px);
+  padding: 0 16px 32px 16px;
+}
+
+.form-submit button {
+  height: 100%;
+  padding: 10px 68px 10px 69px;
+  border: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.summary-cta {
   height: 50px;
-  left: 16px;
-  top: 390px;
   background-color: #1a2236;
   font-size: 16px;
   font-weight: 500;
@@ -91,37 +95,45 @@ body {
   color: white;
   text-align: center;
   letter-spacing: 0;
+  margin: 40px 16px 0 16px;
   border: 0;
 }
 
-.cta:hover {
+.summary-cta button {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  color: white;
+}
+
+.summary-cta button:hover {
+  background-color: #e5e5e5;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.summary-cta button:focus {
+  background: #e5e5e5;
+  border: 2px solid #1a2236;
   color: #1a2236;
 }
 
 .head-image {
   background: url(images/image-geometry_projects.png);
   background-repeat: no-repeat;
-  background-size: 320px 180px;
-  top: 490px;
-  left: 0;
-  right: 0;
-  width: 320px;
+  background-size: cover;
   height: 300px;
 }
 
 .projects-head {
   height: 50px;
-  width: 181px;
-  right: 123px;
-  top: 672px;
   font-size: 50px;
   line-height: 50px;
 }
 
 .projects-list {
   display: grid;
-  position: absolute;
-  top: 800px;
   grid-template-columns: auto;
   left: 0;
 }
@@ -129,17 +141,17 @@ body {
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  width: 100px;
+  flex-direction: column;
 }
 
 .cards {
   flex: 1;
+  margin-top: 32px;
 }
 
 .cards-detail {
   height: 156px;
-  width: 320px;
-  left: 0;
+  width: 100%;
   background: #1a2236;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
@@ -148,19 +160,11 @@ body {
 .cards-detail p {
   width: 264px;
   height: 16px;
-  left: 20px;
   color: white;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: 20px;
   line-height: 80%;
-}
-
-.cards-detail button {
-  height: 20px;
-  left: 99px;
-  background: #98dede;
-  border: 0;
-  margin: 5px;
+  margin-left: 20px;
 }
 
 button a {
@@ -168,116 +172,145 @@ button a {
   color: inherit;
 }
 
-button:hover {
+.cards-detail button:hover {
   background: mistyrose;
 }
 
 .cards-detail .go-to {
   width: 178px;
   height: 44px;
-  background: #1a2236;
-  color: white;
-  left: 20px;
-  margin: 5px;
-  border: 1px solid #fff;
+  background: #e5e5e5;
+  color: #1a2236;
+  margin: 16px 0 0 20px;
 }
 
 .go-to i {
-  margin-left: 10px;
   font-size: 1em;
 }
 
-.go-to:hover {
-  background: mistyrose;
-  color: #1a2236;
+.cards-detail .go-to:hover {
+  background: #1a2236;
+  color: #e5e5e5;
+  border: 1px solid #fff;
+}
+
+.cards-detail .go-to:focus {
+  background: #1a2236;
+  color: #e5e5e5;
+  border: 2px solid #fff;
 }
 
 .fix-card {
   height: 186px;
-  width: 320px;
-  left: 0;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Back images for Project items */
+/* Background images for Project items */
 .card1 {
   background: url(images/Rectangle21.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .card2 {
   background: url(images/Rectangle22.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .card3 {
   background: url(images/Rectangle23.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .card4 {
   background: url(images/Rectangle24.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .card5 {
   background: url(images/Rectangle25.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .card6 {
   background: url(images/Rectangle26.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .about-head {
   height: 50px;
-  width: 134px;
-  top: 2892px;
+  width: 100%;
   font-size: 50px;
+  padding: 56px 0 0 16px;
   line-height: 50px;
 }
 
 .about {
   height: 126px;
-  width: 288px;
-  top: 3020px;
+  width: 100%;
   line-height: 21px;
   font-size: 14px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.about p {
+  width: calc(100% - 32px);
+  padding: 0 16px;
 }
 
 .cta-2 {
   height: 50px;
-  top: 3180px;
   background: #1a2236;
   border: 0;
   color: white;
+  width: 100%;
 }
 
 .cta-2:hover {
+  color: #1a2236;
+  background-color: #e5e5e5;
+  border: 1px solid #1a2236;
+}
+
+.cta-2:focus {
+  background: #e5e5e5;
+  border: 2px solid #1a2236;
   color: #1a2236;
 }
 
 .tech {
   display: grid;
   grid-column: auto;
-  top: 3250px;
 }
 
 .tech-details {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 20px 0 50px 16px;
 }
 
 .tech-details .flex {
   flex: 1;
-  margin: 5px;
-}
-
-.dimension {
-  height: 289px;
-  width: 289px;
+  padding: 10px 0 0 16px;
+  margin: 6px;
 }
 
 .text-size {
   height: 135px;
   width: 178px;
-  left: 66px;
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
@@ -311,30 +344,82 @@ button:hover {
   background: #febf52;
 }
 
-.svg-image1 {
+.about-images {
   height: 102px;
   width: 102px;
-  left: 192px;
-  top: 145px;
+  float: right;
 }
 
-.svg-image2 {
-  height: 102.22146524221353px;
-  width: 102.22146524221353px;
-  left: 215px;
-  top: 409px;
+.contact-form {
+  display: flex;
+  padding: 106px 14px 0 18px;
+  background: url('images/image_geometry_1.svg');
+  background-repeat: no-repeat;
+  gap: 8px;
+  margin-bottom: 64px;
 }
 
-.svg-image2-1 {
-  height: 89.28138486162237px;
-  width: 72.28138486162237px;
-  left: 223px;
-  top: 413px;
+.contact-form h2 {
+  font-size: 50px;
 }
 
-.svg-image3 {
-  height: 102px;
-  width: 102px;
-  left: 190px;
-  top: 650px;
+.contact-form .cta-summary {
+  font-size: 14px;
+  width: 288px;
+  height: 63px;
+  line-height: 21px;
+  letter-spacing: -1%;
+  padding: 20px 14px 0 18px;
+}
+
+.margin-tp {
+  margin-top: 20px;
+}
+
+.contact-form .input-wrapper {
+  padding: 4px 0 4px 16px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-wrapper:hover {
+  border: 1px solid #1a2236;
+}
+
+.contact-form label {
+  font-size: 10px;
+  line-height: 15px;
+  color: #7d7c84;
+  margin-bottom: 4px;
+}
+
+.no-outline {
+  outline: none;
+  border: 0 solid transparent;
+}
+
+/* General CSS Styles */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-cols {
+  flex-direction: column;
+}
+
+.dark-bg {
+  background: #1a2236;
+}
+
+.primary-color {
+  color: #1a2236;
+}
+
+.form-submit {
+  margin-top: 20px;
+  height: 44px;
 }
