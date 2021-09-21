@@ -1,11 +1,11 @@
 
-html,body {
+html, body {
   background: #fff;
   margin: 0;
 }
 
 .navbar {
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -15,7 +15,7 @@ html,body {
 }
 
 .navbar .logo img {
-  display:inline-block;
+  display: inline-block;
   height: 100%;
 }
 
@@ -63,12 +63,29 @@ html,body {
   letter-spacing: -0.01em;
 }
 
+.cards-detail button {
+  height: 20px;
+  background: #98dede;
+  border: 0;
+  margin: 5px 0 0 20px;
+}
+
 .summary {
   display: flex;
   flex-direction: column;
   width: calc(100% - 32px);
   padding: 0 16px 32px 16px;
-} 
+}
+
+.form-submit button {
+  height: 24px;
+  width: 288px;
+  padding: 10px 68px 10px 69px;
+  border: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
 
 .summary-cta {
   height: 50px;
@@ -143,13 +160,6 @@ html,body {
   margin-left: 20px;
 }
 
-.cards-detail button {
-  height: 20px;
-  background: #98dede;
-  border: 0;
-  margin: 5px 0 0 20px;
-}
-
 button a {
   text-decoration: none;
   color: inherit;
@@ -188,7 +198,7 @@ button a {
   background: url(images/Rectangle21.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height:250px;
+  height: 250px;
 }
 
 .card2 {
@@ -327,7 +337,7 @@ button a {
   background-repeat: no-repeat;
   gap: 8px;
   margin-bottom: 64px;
-} 
+}
 
 .contact-form h2 {
   font-size: 50px;
@@ -359,7 +369,7 @@ button a {
   border: 1px solid #1a2236;
 }
 
-.contact-form label{
+.contact-form label {
   font-size: 10px;
   line-height: 15px;
   color: #7d7c84;
@@ -373,16 +383,16 @@ button a {
 
 /* General CSS Styles */
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.flex-cols{
+.flex-cols {
   flex-direction: column;
 }
 
 .dark-bg {
-  background: #1a2236;;
+  background: #1a2236;
 }
 
 .primary-color {
@@ -394,12 +404,3 @@ button a {
   height: 44px;
 }
 
-.form-submit button {
-  height: 24px;
-  width: 288px;
-  padding: 10px 68px 10px 69px;
-  border: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: white;
-}
