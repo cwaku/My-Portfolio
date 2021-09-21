@@ -376,7 +376,7 @@ button a {
   margin-bottom: 4px;
 }
 
-.contact-form input,  .contact-form textarea {
+.no-outline {
   outline: none;
   border: 0 solid transparent;
 }
