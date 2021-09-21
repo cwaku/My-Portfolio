@@ -10,14 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
-<body>
+<body class="no-margin">
   <header class="header">
-    <nav class="navbar">
-      <a class="logo navbar-item position"><img src="images/image_geometry_1.svg" alt="A geometry image"/></a>
-      <i class="fas fa-bars navbar-item icon position primary-color"></i>
+    <nav class="navbar d-flex">
+      <a class="logo"><img src="images/image_geometry_1.svg" alt="A geometry image"/></a>
+      <i class="fas fa-bars navbar-trigger primary-color"></i>
     </nav>
   </header>
-  <section class="summary">
+  <!-- <section class="summary">
     <div class="name position left16 align-left no-margin primary-color">
       <h1 class="no-margin">Ricky
       Mormor</h1>
@@ -178,7 +178,23 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <form class="contact-form d-flex flex-cols">
+    <h2 class="typography">Get Started</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    </p>
+    <span class="d-flex flex-cols input-wrapper">
+      <label for="name" class="poppins">Your name</label>
+      <input class="primary-color" type="text" name="user_names" id="name" placeholder="" title="Your names" maxlength="30" required>
+    </span>
+    <span class="d-flex flex-cols input-wrapper">
+      <label for="email" class="poppins">Your email</label>
+      <input class="primary-color" type="text" name="user_email" id="email" placeholder="" title="Your email" required>
+    </span>
+    <textarea class="input-wrapper primary-color" name="message" id="" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+  </form>
 
 
   <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
