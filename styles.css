@@ -1,5 +1,5 @@
 
-html, body {
+body {
   background: #fff;
   margin: 0;
 }
@@ -376,7 +376,7 @@ button a {
   margin-bottom: 4px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,  .contact-form textarea {
   outline: none;
   border: 0 solid transparent;
 }
@@ -403,4 +403,3 @@ button a {
   margin-top: 20px;
   height: 44px;
 }
-
