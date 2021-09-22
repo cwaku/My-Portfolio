@@ -47,7 +47,7 @@ body {
 
 .name {
   width: 220px;
-  padding: 30px 84px 0 16px;
+  padding: 30px 0 0 16px;
   font-size: 50px;
   line-height: 60px;
   letter-spacing: 0;
@@ -120,12 +120,11 @@ body {
 .head-image {
   background: url(images/image-geometry_projects.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
+  background-size: 768px 250px;
+  height: 250px;
 }
 
 .projects-head {
-  height: 50px;
   font-size: 50px;
   line-height: 50px;
 }
@@ -133,7 +132,7 @@ body {
 .projects-list {
   display: grid;
   grid-template-columns: auto;
-  left: 0;
+  margin-top: 32px;
 }
 
 .project-cards {
@@ -144,7 +143,6 @@ body {
 
 .cards {
   flex: 1;
-  margin-top: 32px;
 }
 
 .cards-detail {
@@ -247,11 +245,10 @@ button a {
 }
 
 .about-head {
-  height: 50px;
   width: 100%;
   font-size: 50px;
-  padding: 56px 0 0 16px;
   line-height: 50px;
+  margin-top: 56px;
 }
 
 .about {
@@ -288,22 +285,32 @@ button a {
   color: #1a2236;
 }
 
+.p-left16 {
+  padding-left: 16px;
+}
+
+.about-btn {
+  margin: 32px 0 0 16px;
+  width: 91%;
+}
+
 .tech {
   display: grid;
   grid-column: auto;
+  margin-top: 120px;
 }
 
 .tech-details {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20px 0 50px 16px;
+  gap: 16px;
 }
 
 .tech-details .flex {
   flex: 1;
   padding: 10px 0 0 16px;
-  margin: 6px;
+  margin: 16px;
 }
 
 .text-size {
@@ -354,7 +361,7 @@ button a {
   background: url('images/image_geometry_1.svg');
   background-repeat: no-repeat;
   gap: 8px;
-  margin-bottom: 64px;
+  margin: 50px 0 64px 0;
 }
 
 .contact-form h2 {
