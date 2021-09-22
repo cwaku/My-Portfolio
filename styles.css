@@ -8,6 +8,10 @@ body {
   justify-content: space-between;
 }
 
+.get-resume-cta a img {
+  margin-left: 10px;
+}
+
 .navbar .logo img {
   display: inline-block;
   height: 100%;
@@ -440,11 +444,7 @@ button a {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-  color: #92dcdc;;
-}
-
-.get-resume-cta a img {
-  margin-left: 10px;
+  color: #92dcdc;
 }
 
 .footer-icons ul {
@@ -464,7 +464,7 @@ button a {
     height: 100px;
     display: block;
     background: #fff;
-    box-shadow: 0px 0.5px 0px #dddfe6;
+    box-shadow: 0 0.5px 0 #dddfe6;
   }
 
   .navbar .logo {
