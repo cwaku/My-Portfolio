@@ -6,12 +6,6 @@ body {
 
 .navbar {
   justify-content: space-between;
-  margin: 0;
-}
-
-.navbar .logo {
-  height: 74px;
-  width: 111px;
 }
 
 .navbar .logo img {
@@ -21,6 +15,10 @@ body {
 
 .navbar .navbar-trigger {
   margin: 19px 16px 0 0;
+}
+
+.navbar ul {
+  display: none;
 }
 
 .full-width {
@@ -173,7 +171,7 @@ button a {
 }
 
 .cards-detail button:hover {
-  background: mistyrose;
+  background: #e5e5e5;
 }
 
 .cards-detail .go-to {
@@ -422,4 +420,76 @@ button a {
 .form-submit {
   margin-top: 20px;
   height: 44px;
+}
+
+#footer {
+  background: #1a2236;
+  margin: 50px 0 0 0;
+  padding: 50px 0 30px 0;
+}
+
+.get-resume-cta a {
+  margin: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #92dcdc;;
+}
+
+.get-resume-cta a img {
+  margin-left: 10px;
+}
+
+.footer-icons ul {
+  list-style: none;
+  color: #fff;
+  font-size: 40px;
+  padding-left: 35px;
+}
+
+.footer-icons ul li {
+  flex: 1;
+}
+
+/* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 768 PIXELS */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 100px;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 0.5px 0px #dddfe6;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+
+  .navbar i {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .navbar ul a {
+    margin: 0 25px 0 25px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1a2236;
+  }
+
+  .navbar ul a:hover {
+    border-bottom: 3px solid #1a2236;
+  }
+
+  .navbar ul a:focus {
+    border-bottom: 3px solid #1a2236;
+  }
 }
