@@ -29,12 +29,18 @@ body {
   width: 100%;
 }
 
-.no-margin {
-  margin: 0;
+.padding-l {
+  padding-left: 16px;
 }
 
-.width288 {
-  width: 288px;
+.margin-l {
+  margin-left: 16px;
+}
+
+.marg
+
+.no-margin {
+  margin: 0;
 }
 
 .typography {
@@ -63,6 +69,10 @@ body {
   padding: 20px 16px 0 16px;
   line-height: 21px;
   letter-spacing: -0.01em;
+}
+
+.intro-geometry {
+  display: none;
 }
 
 .cards-detail button {
@@ -97,7 +107,6 @@ body {
   color: white;
   text-align: center;
   letter-spacing: 0;
-  margin: 40px 16px 0 16px;
   border: 0;
 }
 
@@ -128,7 +137,7 @@ body {
   height: 250px;
 }
 
-.projects-head {
+.descriptive-hd {
   font-size: 50px;
   line-height: 50px;
 }
@@ -248,19 +257,10 @@ button a {
   height: 250px;
 }
 
-.about-head {
-  width: 100%;
-  font-size: 50px;
-  line-height: 50px;
-  margin-top: 56px;
-}
-
 .about {
   height: 126px;
-  width: 100%;
   line-height: 21px;
   font-size: 14px;
-  padding: 20px 0;
   margin: 0;
 }
 
@@ -287,10 +287,6 @@ button a {
   background: #e5e5e5;
   border: 2px solid #1a2236;
   color: #1a2236;
-}
-
-.p-left16 {
-  padding-left: 16px;
 }
 
 .about-btn {
@@ -374,15 +370,21 @@ button a {
 
 .contact-form .cta-summary {
   font-size: 14px;
-  width: 288px;
   height: 63px;
   line-height: 21px;
   letter-spacing: -1%;
-  padding: 20px 14px 0 18px;
 }
 
 .margin-tp {
   margin-top: 20px;
+}
+
+.margin-tp56 {
+  margin-top: 56px;
+}
+
+.margin-bt {
+  margin-bottom: 0;
 }
 
 .contact-form .input-wrapper {
@@ -480,7 +482,6 @@ button a {
     justify-content: center;
     list-style: none;
     height: 100px;
-    width: 100%;
     align-items: center;
     align-content: center;
   }
@@ -499,4 +500,70 @@ button a {
   .navbar ul a:focus {
     border-bottom: 3px solid #1a2236;
   }
+
+  .summary {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+
+  .summary-details {
+    flex: 1;
+  }
+
+  .intro-geometry {
+    display: block;
+  }
+
+  .contact-form {
+    display: flex;
+    background: url('images/image-geometry_6.svg') top left no-repeat,
+    url('images/image-geometry_7.svg') bottom right no-repeat;
+    background-size: 200px;
+    align-items: center;
+  }
+
+  .contact-form h2 {
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .cta-summary {
+    width: 420px;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .contact-form .input-wrapper {
+    width: 420px;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .get-resume-cta {
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .footer-icons {
+    margin-right: 100px;
+  }
+
+  .footer-icons ul {
+    margin-top: 20px;
+  }
+
+  
+.footer-icons ul li {
+  flex: 1;
+  margin: 10px;
+}
 }
