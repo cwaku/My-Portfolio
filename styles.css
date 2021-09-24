@@ -33,8 +33,8 @@ body {
   padding-left: 16px;
 }
 
-.margin-l {
-  margin-left: 16px;
+.margin-right {
+  margin-right: 16px;
 }
 
 .marg
@@ -146,7 +146,6 @@ body {
 .projects-list {
   display: grid;
   grid-template-columns: auto;
-  margin-top: 32px;
 }
 
 .project-cards {
@@ -573,6 +572,49 @@ button a {
   /* STYLING FOR PROJECT SECTION */
   .head-image {
     display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .flex-projects {
+    display: flex;
+    margin-top: 210px;
+  }
+
+  .flex-projects .cards-detail p {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80%;
+    width: 100%;
+  }
+
+  .flex-projects .descriptive-hd {
+    transform: rotate(-90deg)
+  }
+
+  .flex-projects .cards-detail {
+    height: 353px;
+  }
+
+  .flex-projects .deco-bg {
+    background-image: url(images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+  .flex-projects1 {
+    height: 685px;
+    background: url('images/image-geometry_2.svg') top no-repeat,
+    url('images/Rectangle22.png') left no-repeat,
+    url('images/image-geometry_3.svg') bottom right no-repeat,
+    url('images/Rectangle23.png') bottom left no-repeat;
+  }
+
+  .flex-projects1 .cards {
+    width: 420px;
+    float: right;
   }
 
   /* STYLING FOR TECHNOLGIES SECTION */
