@@ -107,7 +107,6 @@ body {
   letter-spacing: 0;
   border: 0;
   width: 100%;
-  border: 0;
   padding: 0;
 }
 
@@ -206,9 +205,7 @@ button a {
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
-
 /* Background images for Project items */
-
 .card1 {
   background: url(images/Rectangle21.png);
   background-size: cover;
@@ -408,7 +405,6 @@ button a {
   border: 0 solid transparent;
 }
 
-
 /* General CSS Styles */
 
 .d-flex {
@@ -461,7 +457,6 @@ button a {
   display: none;
 }
 
-
 /* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 768 PIXELS */
 
 @media only screen and (min-width: 768px) {
@@ -472,12 +467,15 @@ button a {
     background: #fff;
     box-shadow: 0 0.5px 0 #dddfe6;
   }
+
   .navbar .logo {
     display: none;
   }
+  
   .navbar i {
     display: none;
   }
+
   .navbar ul {
     display: flex;
     justify-content: center;
@@ -486,18 +484,22 @@ button a {
     align-items: center;
     align-content: center;
   }
+
   .navbar ul a {
     margin: 0 25px 0 25px;
     line-height: 24px;
     text-decoration: none;
     color: #1a2236;
   }
+
   .navbar ul a:hover {
     border-bottom: 3px solid #1a2236;
   }
+
   .navbar ul a:focus {
     border-bottom: 3px solid #1a2236;
   }
+
   /* STYLING FOR ABOUT SECTION */
   .intro-geometry {
     display: block;
@@ -505,6 +507,7 @@ button a {
     max-width: 100%;
     height: auto;
   }
+
   .about-section {
     max-width: 100vw;
     display: flex;
@@ -512,96 +515,118 @@ button a {
     padding: 80px 0;
     flex-direction: row-reverse;
   }
+
   .about-details {
     max-width: 450px;
     min-width: 300px;
   }
+
   .descriptive-hd {
     font-size: 110px;
     line-height: 100%;
   }
+
   .about-btn {
     width: 50%;
   }
+
   .summary {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     padding: 0;
   }
+
   .summary-cta {
     max-width: 50%;
   }
+
   .summary-details {
     flex: 1;
   }
+
   .name-box {
     padding: 100px;
     background-image: url('images/image_dots.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
   }
+
   .summary-details .name {
     font-size: 110px;
     line-height: 100%;
     padding: 0;
     margin-bottom: 20px;
   }
+
   /* STYLING FOR PROJECT SECTION */
   .head-image {
     display: none;
   }
+
   .mobile-only {
     display: none;
   }
+
   .flex-projects {
     display: flex;
     margin-top: 210px;
   }
+
   .flex-projects .cards-detail p {
     font-weight: bold;
     font-size: 60px;
     line-height: 80%;
     width: 90%;
   }
+
   .flex-projects .descriptive-hd {
     transform: rotate(-90deg);
   }
+
   .flex-projects .cards-detail {
     height: 353px;
   }
+
   .flex-projects .deco-bg {
     background-image: url(images/image_dots.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
   }
+
   .flex-projects1 {
     height: 685px;
     background: url('images/image-geometry_2.svg') top no-repeat, url('images/Rectangle22.png') left no-repeat, url('images/image-geometry_3.svg') bottom right no-repeat, url('images/Rectangle23.png') bottom left no-repeat;
   }
+
   .flex-projects1 .cards {
     width: 420px;
     float: right;
   }
+
   /* STYLING FOR TECHNOLGIES SECTION */
   .tech {
     display: grid;
     margin-top: 0;
     max-width: 60%;
   }
+
   .tech-details .flex {
     padding: 0;
     margin: 0;
   }
+
   .tech-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
     flex-wrap: wrap;
   }
+
   .tech-dimension {
     width: 100%;
   }
+
   /* STYLING FOR FORM */
   .contact-form {
     display: flex;
@@ -611,16 +636,19 @@ button a {
     padding: 106px 14px 80px 18px;
     margin: 50px 0 0 0;
   }
+
   .contact-form h2 {
     font-size: 90px;
     margin-bottom: 0;
     margin-top: 20px;
   }
+
   .cta-summary {
     width: 420px;
     margin-top: 0;
     margin-left: 16px;
   }
+
   .contact-form .input-wrapper {
     width: 420px;
     background: #fff;
@@ -628,28 +656,35 @@ button a {
     font-size: 14px;
     border: none;
   }
+
   .input-wrapper .form-details {
     height: 20px;
     border: 1px solid #dfdfe0;
     border-radius: 4px;
   }
+
   .input-wrapper .form-details:hover {
     border: 1px solid #1a2236;
   }
+
   .input-wrapper .form-details:focus {
     border: 1px solid #252c40;
   }
+
   .contact-form .message {
     height: 100px;
     border: 1px solid #dfdfe0;
     border-radius: 4px;
   }
+
   .contact-form .message:hover {
     border: 1px solid #252c40;
   }
+
   .contact-form .message:focus {
     border: 1px solid #252c40;
   }
+
   /* STYLING FOR FOOTER */
   #footer {
     display: flex;
@@ -657,21 +692,26 @@ button a {
     padding: 0;
     margin: 0;
   }
+
   .get-resume-cta {
     padding-top: 35px;
     font-size: 18px;
     line-height: 27px;
   }
+
   .footer-icons {
     margin-right: 100px;
   }
+
   .footer-icons ul {
     margin-top: 20px;
   }
+
   .footer-icons ul li {
     flex: 1;
     margin: 10px;
   }
+
   .desktop-only {
     display: inline-flex;
     background-color: #fff;
@@ -679,4 +719,5 @@ button a {
     background-position: bottom right;
     background-repeat: no-repeat;
   }
+
 }
