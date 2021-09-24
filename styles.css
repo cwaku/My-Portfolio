@@ -61,6 +61,7 @@ body {
   font-size: 50px;
   line-height: 60px;
   letter-spacing: 0;
+  margin-bottom: 20px;
 }
 
 .intro {
@@ -110,21 +111,21 @@ body {
   border: 0;
 }
 
-.summary-cta button {
-  height: 100%;
+.summary-cta {
+  height: 50px;
   width: 100%;
   border: 0;
   padding: 0;
   color: white;
 }
 
-.summary-cta button:hover {
+.summary-cta:hover {
   background-color: #e5e5e5;
   color: #1a2236;
   border: 1px solid #1a2236;
 }
 
-.summary-cta button:focus {
+.summary-cta:focus {
   background: #e5e5e5;
   border: 2px solid #1a2236;
   color: #1a2236;
@@ -510,6 +511,13 @@ button a {
   }
 
   /* STYLING FOR ABOUT SECTION */
+  .intro-geometry {
+    display: block;
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+  }
+
   .about-section {
     max-width: 100vw;
     display: flex;
@@ -540,10 +548,34 @@ button a {
     padding: 0;
   }
 
+  .summary-cta {
+    max-width: 50%;
+  }
+
   .summary-details {
     flex: 1;
   }
 
+  .name-box {
+    padding: 100px;
+    background-image: url('images/image_dots.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .summary-details .name {
+    font-size: 110px;
+    line-height: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  /* STYLING FOR PROJECT SECTION */
+  .head-image {
+    display: none;
+  }
+
+  /* STYLING FOR TECHNOLGIES SECTION */
   .tech {
     display: grid;
     margin-top: 0;
@@ -564,10 +596,6 @@ button a {
 
   .tech-dimension {
     width: 100%;
-  }
-
-  .intro-geometry {
-    display: block;
   }
 
   /* STYLING FOR FORM */
@@ -650,25 +678,16 @@ button a {
   .footer-icons ul {
     margin-top: 20px;
   }
-
   
-.footer-icons ul li {
-  flex: 1;
-  margin: 10px;
-}
-
-.desktop-only {
-  display: inline-flex;
-  background-color: #fff;
-  background-image: url('images/image_dots_with_teal.svg');
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
-}
-
-@media screen and (min-width: 1160px) {
-  .tech-dimension {
-    /* min-width: 400px; */
-    /* max-width: 400px; */
+  .footer-icons ul li {
+    flex: 1;
+     margin: 10px;
+    }
+    .desktop-only {
+    display: inline-flex;
+    background-color: #fff;
+    background-image: url('images/image_dots_with_teal.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
   }
 }
