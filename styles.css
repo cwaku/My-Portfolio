@@ -651,11 +651,12 @@ button a {
   }
 
   .contact-form .input-wrapper {
-    width: 420px;
     background: #fff;
     box-sizing: border-box;
     font-size: 14px;
     border: none;
+    width: 210px;
+    margin: 4px 0 4px 10px;
   }
 
   .input-wrapper .form-details {
@@ -723,12 +724,6 @@ button a {
 
   .desktop-flex {
     display: flex;
-  }
-  
-  .contact-form .input-wrapper {
-    width: 210px;
-    margin-top: 0;
-    margin: 4px 0px 4px 10px;
   }
 
   .input-wrapper.message {
