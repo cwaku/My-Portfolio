@@ -523,7 +523,6 @@ button a {
     justify-content: space-evenly;
     padding: 80px 0;
     flex-direction: row-reverse;
-    flex-grow: wrap;
   }
 
   .about-details {
@@ -587,11 +586,11 @@ button a {
     font-weight: bold;
     font-size: 60px;
     line-height: 80%;
-    width: 100%;
+    width: 90%;
   }
 
   .flex-projects .descriptive-hd {
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
   }
 
   .flex-projects .cards-detail {
