@@ -15,50 +15,53 @@
     <nav class="navbar d-flex">
       <a class="logo"><img src="images/image_geometry_1.svg" alt="A geometry image"/></a>
       <i class="fas fa-bars navbar-trigger primary-color"></i>
+      <ul class="poppins">
+        <li><a href="#">Hello</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <section class="summary full-width no-margin">
-    <div class="name typography primary-color">
-      <h1 class="no-margin">Ricky
+    <div class="summary-details name-box">
+      <h1 class=" name typography primary-color no-margin">Ricky
       Mormor</h1>
-    </div>
-    <div class="intro primary-color no-margin poppins">
-      <p class="no-margin">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+      <p class="intro primary-color no-margin poppins">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
         If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-    </div>
-    <div class="summary-cta f poppins">
-      <button type="button" class="dark-bg">Start collaboration</button>
-    </div>
+      <button type="button" class="summary-cta poppins full-width dark-bg">Start collaboration</button>
+  </div>
+  <div class="summary-details intro-geometry"><img src="images/image-geometry_1.svg" alt=""></div>
   </section>
 
   <section class="projects-section full-width no-margin">
     <div class="head-image"></div>
-    <div class="primary-color projects-head typography full-width">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="projects-list full-width no-margin">
-      <div class="project-cards no-margin">
+    <div class=" no-margin">
+      <div class="project-cards projects-list full-width no-margin">
+        <section class="flex-projects">
+          <section class="primary-color descriptive-hd projects-head typography margin-right deco-bg">
+            <h2 >Projects</h2>
+          </section>
         <div class="cards">
-          <div class="card1 fix-card full-width">
-          </div>
+          <div class="card1 fix-card full-width"></div>
           <div class="cards-detail poppins dark-bg">
             <p class="poppins">name goes here</p>
             <button type="button">HTML/CSS</button>
             <button type="button">Ruby on Rails</button>
             <button type="button">Javascript</button>
             <div>
-            <button type="button" class="go-to dark-bg">See this project
+              <button type="button" class="go-to dark-bg">See this project-cards
                 <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
         </div>
-        <div class="cards">
+      </section>
+        <div class="cards mobile-only">
           <div class="card2 fix-card"></div>
           <div class="cards-detail poppins dark-bg">
             <p class="poppins">name goes here</p>
-           <button type="button">HTML/CSS</button>
+            <button type="button">HTML/CSS</button>
             <button type="button">Ruby on Rails</button>
             <button type="button">Javascript</button>
             <div>
@@ -68,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards mobile-only">
           <div class="card3 fix-card"></div>
           <div class="cards-detail poppins dark-bg">
             <p class="poppins">name goes here</p>
@@ -82,11 +85,11 @@
             </div>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards mobile-only">
           <div class="card4 fix-card"></div>
           <div class="cards-detail poppins dark-bg">
             <p class="poppins">name goes here</p>
-           <button type="button">HTML/CSS</button>
+            <button type="button">HTML/CSS</button>
             <button type="button">Ruby on Rails</button>
             <button type="button">Javascript</button>
             <div>
@@ -96,6 +99,7 @@
             </div>
           </div>
         </div>
+        <section class="flex-projects1">
         <div class="cards">
           <div class="card5 fix-card"></div>
           <div class="cards-detail poppins dark-bg">
@@ -110,10 +114,11 @@
             </div>
           </div>
         </div>
-        <div class="cards">
+        </section>
+        <div class="cards mobile-only">
           <div class="card6 fix-card"></div>
-          <div class="cards-detail poppins dark-bg">
-            <p class="poppins">name goes here</p>
+           <div class="cards-detail poppins dark-bg">
+            <p class="">name goes here</p>
             <button type="button">HTML/CSS</button>
             <button type="button">Ruby on Rails</button>
             <button type="button"> Javascript</button>
@@ -126,26 +131,21 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 
   <section class="about-section full-width">
-    <div class="primary-color about-head typography full-width">
-      <h2 class="no-margin">About</h2>
-    </div>
-    <div class="about poppins">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    <div class="about-details">
+      <h2 class=" primary-color descriptive-hd typography margin-tp56 margin-bt padding-l">About</h2>
+      <p class="about poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-    </div>
-
-    <div>
-    <button type="button" class="cta-2 dark-bg poppins">Get my CV
-        <i class="fas fa-download"></i>
-      </button>
+          <button type="button" class=" about-btn cta-2 dark-bg poppins">Get my CV
+              <i class="fas fa-download"></i>
+            </button>
     </div>
 
     <div class="tech full-width">
       <div class="tech-details">
-        <div class="languages dimension poppins flex">
+        <div class="languages tech-dimension poppins flex">
           <p class="bold"> Languages</p>
           <ul class="text-size">
             <li>Javascript(ES5/ES6)</li>
@@ -155,7 +155,7 @@
           </ul>
           <img src="images/hash.svg" class="about-images" alt="svg image">
         </div>
-        <div class="frameworks dimension poppins flex">
+        <div class="frameworks tech-dimension poppins flex">
           <p class="bold"> Frameworks</p>
           <ul class="text-size">
             <li>Bootsrap</li>
@@ -166,10 +166,10 @@
           </ul>
           <img src="images/ic_framework.svg" class="about-images" alt="svg image">
         </div>
-        <div class="skills dimension poppins flex">
+        <div class="skills tech-dimension poppins flex">
           <p class="bold"> Skills</p>
           <ul class="text-size">
-            <li>Codekit)</li>
+            <li>Codekit</li>
             <li>Codepen</li>
             <li>Github</li>
             <li>GitLab</li>
@@ -177,29 +177,47 @@
           </ul>
           <img src="images/ic_skills.svg" class="about-images" alt="svg image">
         </div>
+        <div class="skills tech-dimension poppins desktop-only"></div>
       </div>
     </div>
   </section>
-
+  
   <form action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
-    <h2 class="typography primary-color">Get Started</h2>
-    <div class="cta-summary poppins"><p>
+    <h2 class="typography primary-color no-margin">Get Started</h2>
+    <p class="cta-summary poppins">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
     </p>
-  </div>
-    <span class="d-flex flex-cols input-wrapper margin-tp">
+    <div class="desktop-flex">
+    <div class="d-flex flex-cols input-wrapper margin-tp">
       <label for="name" class="poppins">Your name</label>
-      <input class="primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
-    </span>
-    <span class="d-flex flex-cols input-wrapper">
+      <input class="form-details primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
+    </div>
+    <div class="d-flex flex-cols input-wrapper">
       <label for="email" class="poppins">Your email</label>
-      <input class="primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
-    </span>
-    <textarea class="input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
-    <span class="form-submit poppins dark-bg">
+      <input class="form-details primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
+    </div>
+    </div>
+    <textarea class="message input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+    <div class="form-submit poppins dark-bg">
       <button type="submit" class="cta-2 full-width dark-bg poppins">Start collaboration</button>
-    </span>
+    </div>
   </form>
+
+  <footer id="footer">
+    <div class="get-resume-cta poppins">
+      <a href="#">Get my Resume<img src="images/Union.png" alt="Union of angles"></a>
+    </div>
+    <div class="footer-icons">
+      <ul class="d-flex">
+      <li><i class="fab fa-stack-overflow"></i></li>
+      <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-linkedin"></i></li>
+      <li><i class="fab fa-medium-m"></i></li>
+      <li><i class="fab fa-angellist"></i></li>
+    </ul>
+  </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
 </body>
