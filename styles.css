@@ -457,9 +457,9 @@ button a {
   display: none;
 }
 
-/* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 768 PIXELS */
+/* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 992 PIXELS */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   /* STYLING FOR NAVBAR */
   .navbar {
     height: 100px;
@@ -504,6 +504,7 @@ button a {
   .intro-geometry {
     display: block;
     display: inline-flex;
+    min-height: 480px;
     max-width: 100%;
     height: auto;
   }
@@ -575,7 +576,7 @@ button a {
 
   .flex-projects .cards-detail p {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 37px;
     line-height: 80%;
     width: 90%;
   }
@@ -718,5 +719,19 @@ button a {
     background-image: url('images/image_dots_with_teal.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
+  }
+
+  .desktop-flex {
+    display: flex;
+  }
+  
+  .contact-form .input-wrapper {
+    width: 210px;
+    margin-top: 0;
+    margin: 4px 0px 4px 10px;
+  }
+
+  .input-wrapper.message {
+    width: 420px;
   }
 }
