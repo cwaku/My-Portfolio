@@ -471,7 +471,7 @@ button a {
   .navbar .logo {
     display: none;
   }
-  
+
   .navbar i {
     display: none;
   }
@@ -719,5 +719,4 @@ button a {
     background-position: bottom right;
     background-repeat: no-repeat;
   }
-
 }
