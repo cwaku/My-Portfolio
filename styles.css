@@ -504,7 +504,7 @@ button a {
   .intro-geometry {
     display: block;
     display: inline-flex;
-    min-height: 480px;
+    min-width: 480px;
     max-width: 100%;
     height: auto;
   }
