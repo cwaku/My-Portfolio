@@ -381,12 +381,18 @@ button a {
 }
 
 .contact-form .input-wrapper {
-  padding: 4px 0 4px 16px;
+  padding: 10px 0 4px 16px;
   background: #fff;
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 14px;
+  margin: 8px;
+}
+
+.input-wrapper.message {
+  height: 112px;
+  margin-top: 0;
 }
 
 .input-wrapper:hover {
@@ -662,6 +668,7 @@ button a {
     height: 20px;
     border: 1px solid #dfdfe0;
     border-radius: 4px;
+    outline: none;
   }
 
   .input-wrapper .form-details:hover {
