@@ -126,12 +126,12 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section> -->
 
   <section class="about-section full-width">
+    <div class="about-details">
       <h2 class=" primary-color descriptive-hd typography margin-tp56 margin-bt padding-l">About</h2>
-    <div class="about poppins">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      <p class="about poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
           <button type="button" class=" about-btn cta-2 dark-bg poppins">Get my CV
               <i class="fas fa-download"></i>
@@ -140,7 +140,7 @@
 
     <div class="tech full-width">
       <div class="tech-details">
-        <div class="languages dimension poppins flex">
+        <div class="languages tech-dimension poppins flex">
           <p class="bold"> Languages</p>
           <ul class="text-size">
             <li>Javascript(ES5/ES6)</li>
@@ -150,7 +150,7 @@
           </ul>
           <img src="images/hash.svg" class="about-images" alt="svg image">
         </div>
-        <div class="frameworks dimension poppins flex">
+        <div class="frameworks tech-dimension poppins flex">
           <p class="bold"> Frameworks</p>
           <ul class="text-size">
             <li>Bootsrap</li>
@@ -161,7 +161,7 @@
           </ul>
           <img src="images/ic_framework.svg" class="about-images" alt="svg image">
         </div>
-        <div class="skills dimension poppins flex">
+        <div class="skills tech-dimension poppins flex">
           <p class="bold"> Skills</p>
           <ul class="text-size">
             <li>Codekit</li>
@@ -172,9 +172,10 @@
           </ul>
           <img src="images/ic_skills.svg" class="about-images" alt="svg image">
         </div>
+        <div class="skills tech-dimension poppins desktop-only"></div>
       </div>
     </div>
-  </section> -->
+  </section>
   
   <form action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
     <h2 class="typography primary-color no-margin">Get Started</h2>
@@ -183,13 +184,13 @@
     </p>
     <span class="d-flex flex-cols input-wrapper margin-tp">
       <label for="name" class="poppins">Your name</label>
-      <input class="primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
+      <input class="form-details primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
     </span>
     <span class="d-flex flex-cols input-wrapper">
       <label for="email" class="poppins">Your email</label>
-      <input class="primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
+      <input class="form-details primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
     </span>
-    <textarea class="input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+    <textarea class="message input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
     <span class="form-submit poppins dark-bg">
       <button type="submit" class="cta-2 full-width dark-bg poppins">Start collaboration</button>
     </span>

@@ -261,7 +261,7 @@ button a {
   height: 126px;
   line-height: 21px;
   font-size: 14px;
-  margin: 0;
+  margin-left: 16px;
 }
 
 .about p {
@@ -290,14 +290,14 @@ button a {
 }
 
 .about-btn {
-  margin: 32px 0 0 16px;
+  margin: 0 0 0 16px;
   width: 91%;
 }
 
 .tech {
   display: grid;
   grid-column: auto;
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .tech-details {
@@ -365,6 +365,7 @@ button a {
 }
 
 .contact-form h2 {
+  text-align: center;
   font-size: 50px;
 }
 
@@ -373,6 +374,7 @@ button a {
   height: 63px;
   line-height: 21px;
   letter-spacing: -1%;
+  text-align: center;
 }
 
 .margin-tp {
@@ -460,8 +462,14 @@ button a {
   flex: 1;
 }
 
+.desktop-only {
+  display: none;
+}
+
 /* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 768 PIXELS */
 @media only screen and (min-width: 768px) {
+
+  /* STYLING FOR NAVBAR */
   .navbar {
     height: 100px;
     display: block;
@@ -501,6 +509,30 @@ button a {
     border-bottom: 3px solid #1a2236;
   }
 
+  /* STYLING FOR ABOUT SECTION */
+  .about-section {
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+    flex-direction: row-reverse;
+    flex-grow: wrap;
+  }
+
+  .about-details {
+    max-width: 450px;
+    min-width: 300px;
+  }
+
+  .descriptive-hd {
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .about-btn {
+    width: 50%;
+  }
+
   .summary {
     flex-direction: row;
     justify-content: space-around;
@@ -512,16 +544,41 @@ button a {
     flex: 1;
   }
 
+  .tech {
+    display: grid;
+    margin-top: 0;
+    max-width: 60%;
+  }
+
+  .tech-details .flex {
+    padding: 0;
+    margin: 0;
+  }
+
+  .tech-details {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .tech-dimension {
+    width: 100%;
+  }
+
   .intro-geometry {
     display: block;
   }
 
+  /* STYLING FOR FORM */
   .contact-form {
     display: flex;
     background: url('images/image-geometry_6.svg') top left no-repeat,
     url('images/image-geometry_7.svg') bottom right no-repeat;
     background-size: 200px;
     align-items: center;
+    padding: 106px 14px 80px 18px;
+    margin: 50px 0 0 0;
   }
 
   .contact-form h2 {
@@ -538,8 +595,41 @@ button a {
 
   .contact-form .input-wrapper {
     width: 420px;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
   }
 
+  .input-wrapper .form-details {
+    height: 20px;
+    border: 1px solid #dfdfe0;
+    border-radius: 4px;
+  }
+
+  .input-wrapper .form-details:hover {
+    border: 1px solid #1a2236;
+  }
+
+  .input-wrapper .form-details:focus {
+    border: 1px solid #252c40;
+  }
+
+  .contact-form .message {
+    height: 100px;
+    border: 1px solid #dfdfe0;
+    border-radius: 4px;
+  }
+
+  .contact-form .message:hover {
+    border: 1px solid #252c40;
+  }
+
+  .contact-form .message:focus {
+    border: 1px solid #252c40;
+  }
+
+  /* STYLING FOR FOOTER */
   #footer {
     display: flex;
     justify-content: space-between;
@@ -566,4 +656,19 @@ button a {
   flex: 1;
   margin: 10px;
 }
+
+.desktop-only {
+  display: inline-flex;
+  background-color: #fff;
+  background-image: url('images/image_dots_with_teal.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+}
+
+@media screen and (min-width: 1160px) {
+  .tech-dimension {
+    /* min-width: 400px; */
+    /* max-width: 400px; */
+  }
 }
