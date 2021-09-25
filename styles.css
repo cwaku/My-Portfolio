@@ -618,6 +618,14 @@ button a {
   .flex-projects1 .cards {
     width: 420px;
     float: right;
+    cursor: pointer;
+  }
+
+  .pulse-animation:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-fill-mode: both;
   }
 
   /* STYLING FOR TECHNOLGIES SECTION */
@@ -744,5 +752,17 @@ button a {
 
   .input-wrapper.message {
     width: 420px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+  transform: scale3d(1.2, 1.2, 1.2);
+  }
+  50% {
+    transform: scale3d(1.4, 1.4, 1.4);
+  }
+  100% {
+    transform: scale3d(1.5, 1.5, 1.5);
   }
 }
