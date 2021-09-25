@@ -624,7 +624,7 @@ button a {
   .pulse-animation:hover {
     animation-name: pulse;
     animation-duration: 2s;
-    animation-delay: 0;
+    animation-delay: 0s;
     animation-fill-mode: both;
   }
 
@@ -757,11 +757,13 @@ button a {
 
 @keyframes pulse {
   0% {
-  transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
+
   50% {
     transform: scale3d(1.4, 1.4, 1.4);
   }
+  
   100% {
     transform: scale3d(1.5, 1.5, 1.5);
   }
