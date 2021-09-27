@@ -11,6 +11,9 @@ Setup and mobile version skeloton for my portfolio
 
 - HTML and CSS
 
+## See it in action
+
+[Click here to view project](https://cwaku.github.io/My-Portfolio/)
 
 ## Getting Started
 
