@@ -5,23 +5,71 @@ body {
 
 .navbar {
   justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 5rem;
+  padding-left: 0;
+  list-style: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  font-size: 16px;
+  line-height: 300%;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 .get-resume-cta a img {
   margin-left: 10px;
 }
 
-.navbar .logo img {
-  display: inline-block;
-  height: 100%;
-}
-
 .navbar .navbar-trigger {
   margin: 19px 16px 0 0;
-}
-
-.navbar ul {
-  display: none;
 }
 
 .full-width {
@@ -485,10 +533,6 @@ button a {
   }
 
   .navbar .logo {
-    display: none;
-  }
-
-  .navbar i {
     display: none;
   }
 
