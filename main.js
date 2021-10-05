@@ -1,6 +1,10 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+if(hamburger.innerWidth > 992) {
+    hamburger.className.remove('.hamburger')
+}
+
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
