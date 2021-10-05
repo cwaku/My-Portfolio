@@ -23,14 +23,26 @@
   <header class="header">
     <nav class="navbar d-flex">
       <a class="logo"><img src="images/image_geometry_1.svg" alt="A geometry image"/></a>
-      <i class="fas fa-bars navbar-trigger primary-color"></i>
-      <ul class="poppins">
-        <li><a href="#">Hello</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+          <ul class="nav-menu poppins">
+          <li class="nav-item">
+              <a href="#" class="nav-link">Hello</a>
+          </li>
+          <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+          </li>
       </ul>
-    </nav>
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
   </header>
   <section class="summary full-width no-margin">
     <div class="summary-details name-box">
@@ -43,7 +55,7 @@
   <div class="summary-details intro-geometry"><img src="images/image-geometry_1.svg" alt=""></div>
   </section>
 
-  <section class="projects-section full-width no-margin">
+  <section class="projects-section full-width no-margin" id="portfolio">
     <div class="head-image"></div>
     <div class=" no-margin">
       <div class="project-cards projects-list full-width no-margin">
@@ -142,7 +154,7 @@
     </div>
   </section>
 
-  <section class="about-section full-width">
+  <section class="about-section full-width" id="about">
     <div class="about-details">
       <h2 class=" primary-color descriptive-hd typography margin-tp56 margin-bt padding-l">About</h2>
       <p class="about poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -191,7 +203,7 @@
     </div>
   </section>
   
-  <form action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
+  <form id="contact" action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
     <h2 class="typography primary-color no-margin">Get Started</h2>
     <p class="cta-summary poppins">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
@@ -226,8 +238,9 @@
       <li><i class="pulse-animation fab fa-angellist"></i></li>
     </ul>
   </div>
-  </footer>
+  </footer> -->
 
+  <script src="main.js"></script>
   <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
 </body>
 </html>
