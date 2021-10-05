@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-navLink.forEach(n => n.addEventListener('click', () => {
+navLink.forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
