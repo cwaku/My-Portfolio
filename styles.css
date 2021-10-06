@@ -167,7 +167,39 @@ body {
   line-height: 50px;
 }
 
-.projects-list {
+/* STYLING FOR PROJECT SECTION*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "projects-head"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6";
+}
+
+.project-head { grid-area: projects-head;}
+
+.card1 { grid-area: card1; }
+
+.card2 { grid-area: card2; }
+
+.card3 { grid-area: card3; }
+
+.card4 { grid-area: card4; }
+
+.card5 { grid-area: card5; }
+
+.card6 { grid-area: card6; }
+
+
+/* .projects-list {
   display: grid;
   grid-template-columns: auto;
 }
@@ -180,7 +212,7 @@ body {
 
 .cards {
   flex: 1;
-}
+}*/
 
 .cards-detail {
   height: 156px;
@@ -234,7 +266,7 @@ button a {
 }
 
 .fix-card {
-  height: 186px;
+  height: 250px;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -243,42 +275,36 @@ button a {
   background: url(images/Rectangle21.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card2 {
   background: url(images/Rectangle22.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card3 {
   background: url(images/Rectangle23.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card4 {
   background: url(images/Rectangle24.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card5 {
   background: url(images/Rectangle25.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card6 {
   background: url(images/Rectangle26.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .about {
@@ -512,7 +538,7 @@ button a {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    height: 77vh;
+    height: 81vh;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -645,6 +671,10 @@ button a {
     display: none;
   }
 
+  .fix-card {
+    height: 100%;
+  }
+
   .flex-projects {
     display: flex;
     margin-top: 210px;
@@ -687,6 +717,13 @@ button a {
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: both;
+  }
+
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px;
   }
 
   /* STYLING FOR TECHNOLGIES SECTION */
