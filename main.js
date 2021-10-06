@@ -14,3 +14,15 @@ navLink.forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
+
+formSubmit.addEventListener('submit', (e) => {
+  const emailFormat = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  if (email.value.match(emailFormat)) {
+    errorMessage.innerHTML = '';
+  }
+  else {
+    e.preventDefault();
+    errorMessage.innerHTML = 'Email is invalid, must be in this format example@xyz.com';
+  }
+});
