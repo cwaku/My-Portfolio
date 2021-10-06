@@ -20,8 +20,7 @@ formSubmit.addEventListener('submit', (e) => {
 
   if (email.value.match(emailFormat)) {
     errorMessage.innerHTML = '';
-  }
-  else {
+  } else {
     e.preventDefault();
     errorMessage.innerHTML = 'Email is invalid, must be in this format example@xyz.com';
   }
