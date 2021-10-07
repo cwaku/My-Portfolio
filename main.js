@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('FormInput') !== null) {
     let getforminfo = localStorage.getItem('FormInput');
     getforminfo = JSON.parse(getforminfo);
-    userName.value = getforminfo[0].name;
-    email.value = getforminfo[0].email;
-    message.value = getforminfo[0].message;
+    userName.value = getforminfo.name;
+    email.value = getforminfo.email;
+    message.value = getforminfo.message;
   }
 });
