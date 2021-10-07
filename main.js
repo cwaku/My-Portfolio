@@ -22,9 +22,9 @@ function getFormInput() {
     name: userName.value,
     email: email.value,
     message: message.value,
-  }
+  };
   localStorage.setItem('FormInput', JSON.stringify(data));
-};
+}
 
 formSubmit.addEventListener('submit', (e) => {
   const emailFormat = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
