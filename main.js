@@ -17,6 +17,16 @@ navLink.forEach((n) => n.addEventListener('click', () => {
   navMenu.classList.remove('active');
 }));
 
+//Take form input and save to localStorage
+function getFormInput() {
+  const data = {
+    name: userName.value,
+    email: email.value,
+    message: message.value,
+  }
+  localStorage.setItem('FormInput', JSON.stringify(data));
+}
+
 formSubmit.addEventListener('submit', (e) => {
   const emailFormat = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
@@ -27,25 +37,6 @@ formSubmit.addEventListener('submit', (e) => {
     e.preventDefault();
     errorMessage.innerHTML = 'Email is invalid, must be in this format example@xyz.com';
   }
-});
-
-//Take form input and save to localStorage
-//let formData = [];
-
-function getFormInput () {
-  let data = {
-    name: userName.value,
-    email: email.value,
-    message: message.value
-  }
-
-  //formData.push(data);
-
-  localStorage.setItem('FormInput', JSON.stringify(data));
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  
 });
 
 document.addEventListener('DOMContentLoaded', () => {
