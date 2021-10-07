@@ -47,3 +47,14 @@ function getFormInput () {
 document.addEventListener('DOMContentLoaded', () => {
   
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('FormInput') !== null) {
+    let getforminfo = localStorage.getItem('FormInput');
+    getforminfo = JSON.parse(getforminfo);
+    console.log(getforminfo);
+    userName.value = getforminfo[0].name;
+    email.value = getforminfo[0].email;
+    message.value = getforminfo[0].message;
+  }
+});
