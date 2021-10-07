@@ -17,7 +17,6 @@ navLink.forEach((n) => n.addEventListener('click', () => {
   navMenu.classList.remove('active');
 }));
 
-//Take form input and save to localStorage
 function getFormInput() {
   const data = {
     name: userName.value,
@@ -25,7 +24,7 @@ function getFormInput() {
     message: message.value,
   }
   localStorage.setItem('FormInput', JSON.stringify(data));
-}
+};
 
 formSubmit.addEventListener('submit', (e) => {
   const emailFormat = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('FormInput') !== null) {
     let getforminfo = localStorage.getItem('FormInput');
     getforminfo = JSON.parse(getforminfo);
-    console.log(getforminfo);
     userName.value = getforminfo[0].name;
     email.value = getforminfo[0].email;
     message.value = getforminfo[0].message;
