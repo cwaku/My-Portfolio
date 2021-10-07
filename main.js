@@ -2,6 +2,8 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const email = document.getElementById('email');
+const userName = document.getElementById('name');
+const message = document.getElementById('message');
 const formSubmit = document.getElementById('contact');
 const errorMessage = document.querySelector('.error');
 
@@ -20,8 +22,28 @@ formSubmit.addEventListener('submit', (e) => {
 
   if (email.value.match(emailFormat)) {
     errorMessage.innerHTML = '';
+    getFormInput();
   } else {
     e.preventDefault();
     errorMessage.innerHTML = 'Email is invalid, must be in this format example@xyz.com';
   }
+});
+
+//Take form input and save to localStorage
+//let formData = [];
+
+function getFormInput () {
+  let data = {
+    name: userName.value,
+    email: email.value,
+    message: message.value
+  }
+
+  //formData.push(data);
+
+  localStorage.setItem('FormInput', JSON.stringify(data));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  
 });
