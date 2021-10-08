@@ -65,103 +65,26 @@
             <h2>Projects</h2>
           </div>
         </div>
-        <div id="item-1">
-          <div class="card1 fix-card full-width"></div>
-          <div class="cards-detail poppins dark-bg">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
+      </div>
+    </section>
+
+    <section class="modal dark-bg">
+      <div>
+      <div id="card${i}" class="cards-detail poppins">
+        <p class="poppins">Project name goes <span>here</span></p>
+        <button type="button">${projectInfo[1].tech1}</button>
+        <button type="button">${projectInfo[1].tech2}</button>
+        <button type="button">${projectInfo[1].tech3}</button>
+        <div>
+          <img src="images/Rectangle23.png" alt="">
+          
         </div>
-        <div id="item-2">
-          <div class="card2 fix-card full-width"></div>
-          <div class="cards-detail poppins dark-bg mobile-only">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="item-3">
-          <div class="card3 fix-card full-width mobile-only"></div>
-          <div class="cards-detail poppins dark-bg mobile-only">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="item-4">
-          <div class="card4 fix-card full-width"></div>
-          <div class="cards-detail poppins dark-bg mobile-only">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="item-5">
-          <div class="card5 fix-card full-width"></div>
-          <div class="cards-detail poppins dark-bg">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="item-6">
-          <div class="card6 fix-card full-width"></div>
-          <div class="cards-detail poppins dark-bg mobile-only">
-            <p class="poppins">Project name goes <span>here</span></p>
-            <button type="button">HTML/CSS</button>
-            <button type="button">Ruby on Rails</button>
-            <button type="button">Javascript</button>
-            <div>
-              <button type="button" class="go-to dark-bg transition-cta">
-                See this project
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="item-7">
-          <div class="card7 fix-card full-width d-none"></div>
-        </div>
-        <div id="item-8">
-          <div class="card8 fix-card full-width d-none"></div>
-        </div>
-      </div> --
+        <button type="button" class="go-to dark-bg transition-cta">
+          See this project
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
     </section>
 
     <section class="about-section full-width" id="about">
@@ -214,43 +137,44 @@
         </div>
       </div>
     </section>
-
+    
     <form id="contact" action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
-      <h2 class="typography primary-color no-margin">Get Started</h2>
-      <p class="cta-summary poppins">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
-      <div class="desktop-flex">
-        <div class="d-flex flex-cols input-wrapper margin-tp">
-          <label for="name" class="poppins">Your name</label>
-          <input class="form-details primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required />
-        </div>
-        <div class="d-flex flex-cols input-wrapper">
-          <label for="email" class="poppins">Your email</label>
-          <input class="form-details primary-color no-outline" type="email" name="email" id="email" title="Your email" required />
-        </div>
-      </div>
-      <textarea class="message input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
-      <div class="form-submit poppins dark-bg">
-        <button type="submit" class="cta-2 full-width dark-bg poppins">Start collaboration</button>
-      </div>
-    </form>
+    <h2 class="typography primary-color no-margin">Get Started</h2>
+    <p class="cta-summary poppins">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    </p>
+    <div class="desktop-flex">
+    <div class="d-flex flex-cols input-wrapper margin-tp">
+      <label for="name" class="poppins">Your name</label>
+      <input class="form-details primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
+    </div>
+    <div class="d-flex flex-cols input-wrapper">
+      <label for="email" class="poppins">Your email</label>
+      <input class="form-details primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
+    </div>
+    </div>
+    <textarea class="message input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+    <p class="error poppins"></p>
+    <div class="form-submit poppins dark-bg">
+      <button id="form-submit" type="submit" class="cta-2 full-width dark-bg poppins">Start collaboration</button>
+    </div>
+  </form>
 
-    <footer id="footer">
-      <div class="get-resume-cta poppins">
-        <a href="#">Get my Resume<img src="images/Union.png" alt="Union of angles" /></a>
-      </div>
-      <div class="footer-icons">
-        <ul class="d-flex">
-          <li><i class="pulse-animation fab fa-stack-overflow"></i></li>
-          <li><i class="pulse-animation fab fa-github"></i></li>
-          <li><i class="pulse-animation fab fa-twitter"></i></li>
-          <li><i class="pulse-animation fab fa-linkedin"></i></li>
-          <li><i class="pulse-animation fab fa-medium-m"></i></li>
-          <li><i class="pulse-animation fab fa-angellist"></i></li>
-        </ul>
-      </div>
-    </footer>
+  <footer id="footer">
+    <div class="get-resume-cta poppins">
+      <a href="#">Get my Resume<img src="images/Union.png" alt="Union of angles"></a>
+    </div>
+    <div class="footer-icons">
+      <ul class="d-flex">
+      <li><i class="pulse-animation fab fa-stack-overflow"></i></li>
+      <li><i class="pulse-animation fab fa-github"></i></li>
+      <li><i class="pulse-animation fab fa-twitter"></i></li>
+      <li><i class="pulse-animation fab fa-linkedin"></i></li>
+      <li><i class="pulse-animation fab fa-medium-m"></i></li>
+      <li><i class="pulse-animation fab fa-angellist"></i></li>
+    </ul>
+  </div>
+  </footer>
 
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>

@@ -426,6 +426,12 @@ button a {
   border: 0 solid transparent;
 }
 
+.error {
+  color: rgb(238, 13, 13);
+  font-size: 12.6px;
+  padding-left: 10px;
+}
+
 /* General CSS Styles */
 .d-flex {
   display: flex;
@@ -927,6 +933,11 @@ button a {
 
   .contact-form .message:focus {
     border: 1px solid #252c40;
+  }
+
+  .error {
+    color: rgb(238, 13, 13);
+    font-size: 14px;
   }
 
   /* STYLING FOR FOOTER */
