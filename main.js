@@ -5,6 +5,7 @@ const navLink = document.querySelectorAll('.nav-link');
 //Menu button
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
+  hamburger.classList.toggle('hamburger-fix');
   navMenu.classList.toggle('active');
 });
 
