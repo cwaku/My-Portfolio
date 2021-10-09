@@ -1,6 +1,7 @@
 body {
   background: #fff;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -32,10 +33,13 @@ body {
 }
 
 .hamburger {
-  z-index: 9999;
+  z-index: 99;
   cursor: pointer;
-  position: fixed;
   right: 0;
+}
+
+.hamburger-fix {
+  position: fixed;
   margin-right: 20px;
 }
 
@@ -64,13 +68,13 @@ body {
 }
 
 .typography {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -167,21 +171,6 @@ body {
   line-height: 50px;
 }
 
-.projects-list {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.cards {
-  flex: 1;
-}
-
 .cards-detail {
   height: 156px;
   width: 100%;
@@ -194,7 +183,7 @@ body {
   width: 264px;
   height: 16px;
   color: white;
-  font-weight: 300 !important;
+  font-weight: 300;
   font-size: 20px;
   line-height: 80%;
   margin-left: 20px;
@@ -203,6 +192,29 @@ body {
 button a {
   text-decoration: none;
   color: inherit;
+}
+
+.buttons button {
+  width: 320px;
+  height: 51px;
+  margin-left: 20px;
+  border: 1px solid #1a2236;
+  background: #e5e5e5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1a2236;
+}
+
+.modal-buttons button {
+  height: 30px;
+  background: #fff;
+  border: 0.516669px solid #1a2236;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
 }
 
 .cards-detail button:hover {
@@ -234,51 +246,45 @@ button a {
 }
 
 .fix-card {
-  height: 186px;
+  height: 250px;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Background images for Project items */
 .card1 {
-  background: url(images/Rectangle21.png);
+  background: url(images/Rectangle21.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card2 {
   background: url(images/Rectangle22.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card3 {
-  background: url(images/Rectangle23.png);
+  background: url(images/Rectangle27.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card4 {
   background: url(images/Rectangle24.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card5 {
-  background: url(images/Rectangle25.png);
+  background: url(images/Rectangle26.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .card6 {
   background: url(images/Rectangle26.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
 }
 
 .about {
@@ -379,10 +385,98 @@ button a {
   float: right;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  padding: 57px 0 20px 20px;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 40px;
+  width: 25.35px;
+  height: 2.54px;
+  color: #1a2236;
+}
+
+.close:hover,
+.close:focus {
+  color: #c4c4c4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title {
+  width: 264px;
+  height: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.modal-buttons {
+  margin: 23px 50px 18px 0;
+}
+
+.modal-buttons button:hover {
+  background: #e5e5e5;
+}
+
+.modal-summary {
+  width: 399px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+  margin-top: 30px;
+}
+
+.space {
+  margin: 30px;
+}
+
+.main-image {
+  background-image: url(images/Group109.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 360.75px;
+  height: 262.7px;
+}
+
+.buttons button i {
+  padding-left: 100px;
+}
+
+.buttons button:first-child {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
 .contact-form {
   display: flex;
   padding: 106px 14px 0 18px;
-  background: url('images/image_geometry_1.svg');
+  background: url("images/image_geometry_1.svg");
   background-repeat: no-repeat;
   gap: 8px;
   margin: 50px 0 64px 0;
@@ -451,9 +545,12 @@ button a {
 }
 
 /* General CSS Styles */
-
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
 }
 
 .flex-cols {
@@ -503,6 +600,20 @@ button a {
 }
 
 @media (max-width: 992px) {
+  #item-7,
+  #item-8 {
+    display: none;
+  }
+
+  /* Style for modal buttons */
+  .modal-buttons button {
+    width: 30%;
+  }
+
+  .remove {
+    display: none;
+  }
+
   .nav-menu {
     z-index: 99;
     background-image: url(./images/image_geometry_menu_1.svg), url(./images/image_geometry_menu_2.svg);
@@ -518,7 +629,7 @@ button a {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    height: 77vh;
+    height: 81vh;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -540,9 +651,100 @@ button a {
   }
 }
 
+/* Style for project section */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  height: 100%;
+  margin-top: 40px;
+}
+
 /* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 992 PIXELS */
 
 @media only screen and (min-width: 992px) {
+  .close {
+    font-size: 58px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .modal-buttons {
+    margin-left: 30px;
+  }
+
+  .modal-buttons button {
+    font-size: 30.3334px;
+    height: 40px;
+  }
+
+  .title {
+    width: 726px;
+    height: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80%;
+    padding-left: 30px;
+  }
+
+  .main-image {
+    width: 1229px;
+    height: 885.85px;
+    margin-left: 25px;
+  }
+
+  .modal-summary {
+    width: 700px;
+    height: 216px;
+    margin-left: 250px;
+    margin-top: 68px;
+  }
+
+  .buttons {
+    margin-left: 230px;
+    margin-top: 40px;
+  }
+
+  .m-buttons:hover {
+    background: #1a2236;
+    color: #e5e5e5;
+    border: 1px solid #fff;
+  }
+
+  .m-buttons:focus {
+    background: #1a2236;
+    color: #e5e5e5;
+    border: 2px solid #fff;
+  }
+
+  .remove {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-left: 200px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+    margin-top: 120px;
+    margin-bottom: 110px;
+  }
+
+  .remove a {
+    text-decoration: none;
+    color: #1a2236;
+    margin-top: 20px;
+  }
+
   /* STYLING FOR NAVBAR */
   .hamburger {
     display: none;
@@ -630,7 +832,7 @@ button a {
 
   .name-box {
     padding: 100px;
-    background-image: url('images/image_dots.svg');
+    background-image: url("images/image_dots.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -651,41 +853,44 @@ button a {
     display: none;
   }
 
-  .flex-projects {
-    display: flex;
-    margin-top: 210px;
+  .fix-card {
+    height: 350px;
   }
 
-  .flex-projects .cards-detail p {
+  .cards-detail:hover {
+    cursor: pointer;
+  }
+
+  .container .cards-detail {
+    height: 200px;
+  }
+
+  .container .cards-detail p {
     font-weight: bold;
     font-size: 37px;
     line-height: 80%;
-    width: 90%;
+    width: 100%;
   }
 
-  .flex-projects .descriptive-hd {
+  .container .cards-detail button {
+    width: 132px;
+    height: 40px;
+  }
+
+  .container .descriptive-hd {
     transform: rotate(-90deg);
+    font-size: 50px;
+    padding-bottom: 100px;
   }
 
-  .flex-projects .cards-detail {
-    height: 353px;
+  .contact-form h2 {
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-top: 20px;
   }
 
-  .flex-projects .deco-bg {
-    background-image: url(images/image_dots.svg);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
-  .flex-projects1 {
-    height: 685px;
-    background: url('images/image-geometry_2.svg') top no-repeat, url('images/Rectangle22.png') left no-repeat, url('images/image-geometry_3.svg') bottom right no-repeat, url('images/Rectangle23.png') bottom left no-repeat;
-  }
-
-  .flex-projects1 .cards {
-    width: 420px;
-    float: right;
-    cursor: pointer;
+  .container .descriptive-hd h2 {
+    margin-left: 100px;
   }
 
   .pulse-animation:hover {
@@ -693,6 +898,138 @@ button a {
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: both;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    height: 1810px;
+    margin-top: 210px;
+  }
+
+  #item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    background-image: url(images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 5;
+  }
+
+  #item-2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    width: 879px;
+  }
+
+  #item-3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+  #item-4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+
+  #item-5 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #item-6 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    grid-column-end: 5;
+  }
+
+  #item-7 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+  }
+
+  #item-8 {
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 5;
+  }
+
+  .d-none {
+    display: block;
+  }
+
+  /* Background images for Project items */
+  .card1 {
+    background: url(images/Rectangle21.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card2 {
+    background: url(images/Rectangle22.png), url(images/image-geometry_2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    height: 510px;
+  }
+
+  .card3 {
+    background: url(images/image-geometry_2.svg);
+    background-repeat: no-repeat;
+  }
+
+  .card4 {
+    background: url(images/Rectangle27.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .card5 {
+    background: url(images/Rectangle26.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card6 {
+    background: url(images/image-geometry_3.svg) bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+  }
+
+  .card7 {
+    background: url(images/image-geometry_5.svg), url(images/image-geometry_4.svg);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+  }
+
+  .card8 {
+    background: url(images/Rectangle24.png);
+    background-repeat: no-repeat;
   }
 
   /* STYLING FOR TECHNOLGIES SECTION */
@@ -721,17 +1058,11 @@ button a {
   /* STYLING FOR FORM */
   .contact-form {
     display: flex;
-    background: url('images/image-geometry_6.svg') top left no-repeat, url('images/image-geometry_7.svg') bottom right no-repeat;
+    background: url("images/image-geometry_6.svg") top left no-repeat, url("images/image-geometry_7.svg") bottom right no-repeat;
     background-size: 200px;
     align-items: center;
     padding: 106px 14px 80px 18px;
     margin: 50px 0 0 0;
-  }
-
-  .contact-form h2 {
-    font-size: 90px;
-    margin-bottom: 0;
-    margin-top: 20px;
   }
 
   .cta-summary {
@@ -781,7 +1112,6 @@ button a {
   .error {
     color: rgb(238, 13, 13);
     font-size: 14px;
-    padding-left: 16px;
   }
 
   /* STYLING FOR FOOTER */
@@ -814,7 +1144,7 @@ button a {
   .desktop-only {
     display: inline-flex;
     background-color: #fff;
-    background-image: url('images/image_dots_with_teal.svg');
+    background-image: url("images/image_dots_with_teal.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
   }
