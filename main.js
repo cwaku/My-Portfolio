@@ -147,6 +147,7 @@ var modal = document.getElementById("myModal");
 closePopup.addEventListener('click', () => {
   modal.style.display = "none";
   document.body.style.overflow = "auto";
+  document.body.style.overflowX = "hidden";
 });
 
 window.onclick = function(event) {
