@@ -8,9 +8,6 @@ const message = document.getElementById('message');
 const form = document.getElementById('contact');
 const errorMessage = document.querySelector('.error');
 
-
-
-//Menu button
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   hamburger.classList.toggle('hamburger-fix');
@@ -57,7 +54,7 @@ const projectInfo = [
   },
 ];
 
-for (let i = 1; i <= projectInfo[0]; i++) {
+for (let i = 1; i <= projectInfo[0]; i += 1) {
   const projects = `<div id="item-${i}">
   <div class="card${i} fix-card full-width"></div>
   <div id="card${i}" class="cards-detail poppins dark-bg mobile-only">
@@ -96,9 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
     card3.classList.add('mobile-only');
   }
   
-  var modal = document.getElementById("myModal");
-  
-  //Create modal
+  const modal = document.getElementById("myModal");
+
   const modalContent = `<div class="modal-content poppins">
   <span class="close poppins">&times;</span>
    <div class="title">
@@ -128,13 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
  <a href="#">Next project <i class="fas fa-arrow-right"></i></a>
  </div>
  </div>`;
+ 
  modal.innerHTML = modalContent;
+  let popUp = document.querySelectorAll('.popup');
+  let closePopup = document.querySelector('.close');
 
- let popUp = document.querySelectorAll('.popup');
-
- let closePopup = document.querySelector('.close');
-
- popUp.forEach((n) => n.addEventListener('click', () => {
+  popUp.forEach((n) => n.addEventListener('click', () => {
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
 }));

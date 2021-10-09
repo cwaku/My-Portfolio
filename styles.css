@@ -429,6 +429,16 @@ button a {
   margin: 23px 50px 18px 0;
 }
 
+.modal-buttons button {
+  height: 30px;
+  background: #fff;
+  border: 0.516669px solid #1a2236;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
 .modal-buttons button:hover {
   background: #e5e5e5;
 }
@@ -686,7 +696,7 @@ button a {
   }
 
   .main-image {
-    width: 1209px;
+    width: 1229px;
     height: 885.85px;
     margin-left: 25px;
   }
@@ -847,16 +857,6 @@ button a {
     height: 350px;
   }
 
-  .modal-buttons button {
-    height: 30px;
-    background: #fff;
-    border: 0.516669px solid #1a2236;
-    font-weight: 300;
-    font-size: 10.3334px;
-    line-height: 80%;
-    color: #1a2236;
-  }
-
   .cards-detail:hover {
     cursor: pointer;
   }
@@ -881,6 +881,12 @@ button a {
     transform: rotate(-90deg);
     font-size: 50px;
     padding-bottom: 100px;
+  }
+
+  .contact-form h2 {
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-top: 20px;
   }
 
   .container .descriptive-hd h2 {
@@ -1057,12 +1063,6 @@ button a {
     align-items: center;
     padding: 106px 14px 80px 18px;
     margin: 50px 0 0 0;
-  }
-
-  .contact-form h2 {
-    font-size: 90px;
-    margin-bottom: 0;
-    margin-top: 20px;
   }
 
   .cta-summary {
