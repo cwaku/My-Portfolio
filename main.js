@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
     cardDetails2.classList.remove('mobile-only');
     card3.classList.add('mobile-only');
   }
-  
-  const modal = document.getElementById("myModal");
+
+  const modal = document.getElementById('myModal');
 
   const modalContent = `<div class="modal-content poppins">
   <span class="close poppins">&times;</span>
@@ -124,25 +124,25 @@ document.addEventListener('DOMContentLoaded', () => {
  <a href="#">Next project <i class="fas fa-arrow-right"></i></a>
  </div>
  </div>`;
- 
- modal.innerHTML = modalContent;
-  let popUp = document.querySelectorAll('.popup');
-  let closePopup = document.querySelector('.close');
+
+  modal.innerHTML = modalContent;
+  const popUp = document.querySelectorAll('.popup');
+  const closePopup = document.querySelector('.close');
 
   popUp.forEach((n) => n.addEventListener('click', () => {
-  modal.style.display = "block";
-  document.body.style.overflow = "hidden";
-}));
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }));
 
-closePopup.addEventListener('click', () => {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-  document.body.style.overflowX = "hidden";
-});
-
-window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-}
+  closePopup.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    document.body.style.overflowX = 'hidden';
+  });
+  
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 });
