@@ -371,8 +371,8 @@ button a {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0 , 0, 0.4);
 }
 
 /* Modal Content/Box */
@@ -406,7 +406,6 @@ button a {
 .title {
   width: 264px;
   height: 16px;
-
   font-weight: bold;
   font-size: 20px;
   line-height: 80%;
@@ -424,7 +423,7 @@ button a {
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
-  color: #1A2236;
+  color: #1a2236;
 }
 
 .modal-buttons button:hover {
@@ -445,10 +444,6 @@ button a {
 }
 
 .main-image {
-  /* width: 69.78px;
-  height: 40.54px; */
-  width: 278.75px;
-  height: 202.7px;
   background-image: url(images/Group109.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +461,7 @@ button a {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  color: #1A2236;
+  color: #1a2236;
 }
 
 .buttons button i {
@@ -668,34 +663,6 @@ button a {
   grid-auto-flow: row;
   height: 100%;
   margin-top: 40px;
-}
-
-.project-head {
-  grid-area: projects-head;
-}
-
-.card1 {
-  grid-area: card1;
-}
-
-.card2 {
-  grid-area: card2;
-}
-
-.card3 {
-  grid-area: card3;
-}
-
-.card4 {
-  grid-area: card4;
-}
-
-.card5 {
-  grid-area: card5;
-}
-
-.card6 {
-  grid-area: card6;
 }
 
 /* STYLING FOR DEVICES WITH MINIMUM WIDTH OF 992 PIXELS */
@@ -946,6 +913,9 @@ button a {
     grid-column-start: 1;
     grid-row-end: 2;
     grid-column-end: 2;
+    background-image: url(images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 
   #item-1 {
@@ -1012,12 +982,6 @@ button a {
   }
 
   /* Background images for Project items */
-  #item-0 {
-    background-image: url(images/image_dots.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-  }
-
   .card1 {
     background: url(images/Rectangle21.svg);
     background-size: cover;

@@ -32,7 +32,7 @@ function getFormInput() {
 }
 
 form.addEventListener('input', () => {
-    getFormInput();
+  getFormInput();
 });
 
 form.addEventListener('submit', (e) => {
@@ -48,15 +48,14 @@ form.addEventListener('submit', (e) => {
 const projectInfo = [
   8,
   {
-  title: 'Project name goes <span>here</span>',
-  tech1: 'HTML/CSS',
-  tech2: 'Ruby on Rails',
-  tech3: 'JavaScript',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><span class="space"></span><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  projectName: 'Project name goes here',
-},
+    title: 'Project name goes <span>here</span>',
+    tech1: 'HTML/CSS',
+    tech2: 'Ruby on Rails',
+    tech3: 'JavaScript',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><span class="space"></span><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    projectName: 'Project name goes here',
+  },
 ];
-
 
 for (let i = 1; i <= projectInfo[0]; i++) {
   const projects = `<div id="item-${i}">
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
     message.value = getforminfo.message;
   }
 
-  //check window width add or remove classes from elements
   const cardDetails1 = document.getElementById('card1');
   const cardDetails2 = document.getElementById('card5');
   const card3 = document.getElementById('item-3');
@@ -97,14 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
     cardDetails2.classList.remove('mobile-only');
     card3.classList.add('mobile-only');
   }
-
-
-  // Get the modal
-var modal = document.getElementById("myModal");
-
- //Create modal
- const modalContent = `<div class="modal-content poppins">
- <span class="close poppins">&times;</span>
+  
+  var modal = document.getElementById("myModal");
+  
+  //Create modal
+  const modalContent = `<div class="modal-content poppins">
+  <span class="close poppins">&times;</span>
    <div class="title">
      <p class="poppins">${projectInfo[1].projectName}</p>
    </div>
@@ -134,10 +130,9 @@ var modal = document.getElementById("myModal");
  </div>`;
  modal.innerHTML = modalContent;
 
- var popUp = document.querySelectorAll('.popup');
+ let popUp = document.querySelectorAll('.popup');
 
- // Get the <span> element that closes the modal
- var closePopup = document.querySelector('.close');
+ let closePopup = document.querySelector('.close');
 
  popUp.forEach((n) => n.addEventListener('click', () => {
   modal.style.display = "block";
@@ -151,7 +146,7 @@ closePopup.addEventListener('click', () => {
 });
 
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = "none";
   }
 }
