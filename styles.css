@@ -1,6 +1,7 @@
 body {
   background: #fff;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -426,6 +427,10 @@ button a {
   color: #1A2236;
 }
 
+.modal-buttons button:hover {
+  background: #e5e5e5;
+}
+
 .modal-summary {
   width: 399px;
   font-weight: normal;
@@ -602,6 +607,11 @@ button a {
 }
 
 @media (max-width: 992px) {
+  #item-7,
+  #item-8 {
+    display: none;
+  }
+
   /* Style for modal buttons */
   .modal-buttons button {
     width: 30%;
@@ -610,6 +620,7 @@ button a {
   .remove {
     display: none;
   }
+
 
   .nav-menu {
     z-index: 99;
@@ -926,7 +937,7 @@ button a {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px;
-    height: 1950px;
+    height: 1810px;
     margin-top: 210px;
   }
 

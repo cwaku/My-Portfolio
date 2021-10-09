@@ -52,6 +52,8 @@ const projectInfo = [
   tech1: 'HTML/CSS',
   tech2: 'Ruby on Rails',
   tech3: 'JavaScript',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><span class="space"></span><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  projectName: 'Project name goes here',
 },
 ];
 
@@ -65,7 +67,7 @@ for (let i = 1; i <= projectInfo[0]; i++) {
     <button type="button">${projectInfo[1].tech2}</button>
     <button type="button">${projectInfo[1].tech3}</button>
     <div>
-      <button type="button" class="go-to dark-bg transition-cta">
+      <button type="button" class="popup go-to dark-bg transition-cta">
         See this project
         <i class="fas fa-arrow-right"></i>
       </button>
@@ -95,65 +97,52 @@ document.addEventListener('DOMContentLoaded', () => {
     cardDetails2.classList.remove('mobile-only');
     card3.classList.add('mobile-only');
   }
-});
 
-//Create modal
-const modalContent = `<div class="modal-content poppins">
-<span class="close poppins">&times;</span>
-  <div class="title">
-    <p class="poppins">Project name goes here</p>
-  </div>
-  <div class="modal-buttons">
-  <button type="button">HTML/CSS</button>
-  <button type="button">Ruby on Rails</button>
-  <button type="button">JavaScript</button>
-</div>
-<div class="main-image"></div>
-<div class="modal-summary poppins">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi
-   <br><span class="space"></span><br>
-   Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-   </p>
-</div>
-<div class="buttons">
-<button type="button" class="m-buttons">
-  See live
-  <i class="fas fa-external-link-alt"></i>
-</button>
-<button type="button" class="m-buttons">
-  See source
-  <i class="fab fa-github"></i>
-</button>
-</div>
-<div class="remove poppins">
-<a href="#"><i class="fas fa-arrow-left"></i> Previous project</a>
-<a href="#">Next project <i class="fas fa-arrow-right"></i></a>
-</div>
-</div>`;
 
-// Get the modal
+  // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+ //Create modal
+ const modalContent = `<div class="modal-content poppins">
+ <span class="close poppins">&times;</span>
+   <div class="title">
+     <p class="poppins">${projectInfo[1].projectName}</p>
+   </div>
+   <div class="modal-buttons">
+   <button type="button">${projectInfo[1].tech1}</button>
+   <button type="button">${projectInfo[1].tech2}</button>
+   <button type="button">${projectInfo[1].tech3}</button>
+ </div>
+ <div class="main-image"></div>
+ <div class="modal-summary poppins">
+ <p>${projectInfo[1].description}</p>
+ </div>
+ <div class="buttons">
+ <button type="button" class="m-buttons">
+   See live
+   <i class="fas fa-external-link-alt"></i>
+ </button>
+ <button type="button" class="m-buttons">
+   See source
+   <i class="fab fa-github"></i>
+ </button>
+ </div>
+ <div class="remove poppins">
+ <a href="#"><i class="fas fa-arrow-left"></i> Previous project</a>
+ <a href="#">Next project <i class="fas fa-arrow-right"></i></a>
+ </div>
+ </div>`;
+ modal.innerHTML = modalContent;
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+ var popUp = document.querySelectorAll('.popup');
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+ // Get the <span> element that closes the modal
+ var closePopup = document.querySelector('.close');
+
+ popUp.forEach((n) => n.addEventListener('click', () => {
   modal.style.display = "block";
-}
+  document.body.style.overflow = "hidden";
+}));
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+});
