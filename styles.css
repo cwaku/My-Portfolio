@@ -402,9 +402,9 @@ button a {
 .modal-content {
   padding: 57px 0 20px 20px;
   height: auto;
-  background-color: #e5e5e5;
+  background-color: #fff;
   margin: 0 auto;
-  border: 1px solid #888;
+  border: 1px solid #e5e5e5;
   width: 100%;
 }
 
