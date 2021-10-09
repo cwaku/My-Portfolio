@@ -139,10 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'auto';
     document.body.style.overflowX = 'hidden';
   });
-  
-  window.onclick = function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      document.body.style.overflowX = 'hidden';
     }
-  };
+  });
 });
