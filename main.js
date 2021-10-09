@@ -144,5 +144,14 @@ var modal = document.getElementById("myModal");
   document.body.style.overflow = "hidden";
 }));
 
+closePopup.addEventListener('click', () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+});
 
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 });
