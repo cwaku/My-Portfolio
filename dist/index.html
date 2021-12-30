@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYR092MNVS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BYR092MNVS");
+    </script>
+    <title>My Portfolio</title>
+  <script defer src="index.bundle.js"></script></head>
+  <body>
+    <header class="header">
+      <nav class="navbar d-flex">
+        <a class="logo"><img src="images/image_geometry_1.svg" alt="A geometry image" /></a>
+        <ul class="nav-menu poppins">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Hello</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="summary full-width no-margin">
+      <div class="summary-details name-box">
+        <h1 class="name typography primary-color no-margin">Ricky Mormor</h1>
+        <p class="intro primary-color no-margin poppins">
+          Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.
+        </p>
+        <button type="button" class="summary-cta poppins full-width dark-bg transition-cta">Start collaboration</button>
+      </div>
+      <div class="summary-details intro-geometry"><img src="images/image-geometry_1.svg" alt="" /></div>
+    </section>
+
+    <section class="projects-section full-width no-margin" id="portfolio">
+      <div class="head-image"></div>
+      <div class="container">
+        <div id="item-0">
+          <div class="primary-color descriptive-hd projects-head typography margin-right deco-bg card-0">
+            <h2>Projects</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="myModal" class="modal dark-bg"></section>
+
+    <section class="about-section full-width" id="about">
+      <div class="about-details">
+        <h2 class="primary-color descriptive-hd typography margin-tp56 margin-bt padding-l">About</h2>
+        <p class="about poppins">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod
+        </p>
+        <button type="button" class="about-btn cta-2 dark-bg poppins">
+          Get my CV
+          <i class="fas fa-download"></i>
+        </button>
+      </div>
+
+      <div class="tech full-width">
+        <div class="tech-details">
+          <div class="languages tech-dimension poppins flex">
+            <p class="bold">Languages</p>
+            <ul class="text-size">
+              <li>Javascript(ES5/ES6)</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <img src="images/hash.svg" class="about-images" alt="svg image" />
+          </div>
+          <div class="frameworks tech-dimension poppins flex">
+            <p class="bold">Frameworks</p>
+            <ul class="text-size">
+              <li>Bootsrap</li>
+              <li>Ruby on rails</li>
+              <li>Rspec</li>
+              <li>Capibara</li>
+              <li>Selenium</li>
+            </ul>
+            <img src="images/ic_framework.svg" class="about-images" alt="svg image" />
+          </div>
+          <div class="skills tech-dimension poppins flex">
+            <p class="bold">Skills</p>
+            <ul class="text-size">
+              <li>Codekit</li>
+              <li>Codepen</li>
+              <li>Github</li>
+              <li>GitLab</li>
+              <li>Terminal</li>
+            </ul>
+            <img src="images/ic_skills.svg" class="about-images" alt="svg image" />
+          </div>
+          <div class="skills tech-dimension poppins desktop-only"></div>
+        </div>
+      </div>
+    </section>
+    
+    <form id="contact" action="https://formspree.io/f/xwkaywbg" class="contact-form d-flex flex-cols" method="POST">
+    <h2 class="typography primary-color no-margin">Get Started</h2>
+    <p class="cta-summary poppins">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    </p>
+    <div class="desktop-flex">
+    <div class="d-flex flex-cols input-wrapper margin-tp">
+      <label for="name" class="poppins">Your name</label>
+      <input class="form-details primary-color no-outline" type="text" name="name" id="name" title="Your name" maxlength="30" required>
+    </div>
+    <div class="d-flex flex-cols input-wrapper">
+      <label for="email" class="poppins">Your email</label>
+      <input class="form-details primary-color no-outline" type="email" name="email" id="email" title="Your email" required>
+    </div>
+    </div>
+    <textarea class="message input-wrapper no-outline primary-color" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+    <p class="error poppins"></p>
+    <div class="form-submit poppins dark-bg">
+      <button id="form-submit" type="submit" class="cta-2 full-width dark-bg poppins">Start collaboration</button>
+    </div>
+  </form>
+
+  <footer id="footer">
+    <div class="get-resume-cta poppins">
+      <a href="#">Get my Resume<img src="images/Union.png" alt="Union of angles"></a>
+    </div>
+    <div class="footer-icons">
+      <ul class="d-flex">
+      <li><i class="pulse-animation fab fa-stack-overflow"></i></li>
+      <li><i class="pulse-animation fab fa-github"></i></li>
+      <li><i class="pulse-animation fab fa-twitter"></i></li>
+      <li><i class="pulse-animation fab fa-linkedin"></i></li>
+      <li><i class="pulse-animation fab fa-medium-m"></i></li>
+      <li><i class="pulse-animation fab fa-angellist"></i></li>
+    </ul>
+  </div>
+  </footer>
+
+    <script src="https://kit.fontawesome.com/a1924e4518.js" crossorigin="anonymous"></script>
+  </body>
+</html>
